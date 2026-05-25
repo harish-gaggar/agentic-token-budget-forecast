@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local virtualenvs
+.venv/
+venv/
+env/
+
+# LaTeX build scratch (paper.pdf may be checked in for convenience)
+*.aux
+paper.txt
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local secrets / env
+.env
+.env.*
+!.env.example
+
+# Container scratch produced while running the microbenchmark
+/tmp/microbench*.csv

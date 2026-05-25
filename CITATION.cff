@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "Task-Aware Token Budget Forecasting for Agentic Workflows"
+message: >-
+  If you use this code or refer to our work, please cite the manuscript
+  (preferred-citation below) and this repository.
+type: software
+authors:
+  - given-names: Harish
+    family-names: Gaggar
+    affiliation: Intuit Inc.
+    email: harish_gaggar@intuit.com
+abstract: >-
+  TABF forecasts per-stage token use from a task description alone;
+  ContextOptimizer trims the live message list before each LLM call while
+  preserving tool-call/response structure. This repository contains the
+  benchmark, experiments, and artifacts for the accompanying paper.
+keywords:
+  - context engineering
+  - token budget forecasting
+  - LLM agents
+  - agentic workflows
+  - cost optimisation
+  - gradient boosting
+repository-code: "https://github.com/harish-gaggar/agentic-token-budget-forecast"
+preferred-citation:
+  type: article
+  title: "Task-Aware Token Budget Forecasting for Agentic Workflows"
+  authors:
+    - given-names: Harish
+      family-names: Gaggar
+  year: 2026
+  notes: "Manuscript and BibTeX in paper.tex / paper.bib; update with venue DOI when published."

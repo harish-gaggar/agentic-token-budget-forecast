@@ -1,0 +1,4 @@
+model,usd_per_million_input_tokens,per_turn_usd,per_100_turns_day_usd,per_1k_turns_day_usd,per_10k_turns_day_usd,annual_1k_per_day_usd,derivation_basis
+gpt-4o-mini,0.15,0.0028,0.28,2.77,27.72,1012,"saved_per_turn = avg_input_per_turn (25667.8, n=75 prod turns) * reduction_pct_overall (0.72, n=14 ctx-opt log lines). Public list prices captured 2026-05-20. Input tokens only."
+gpt-4o,2.50,0.0462,4.62,46.20,462.02,16864,"saved_per_turn = avg_input_per_turn (25667.8, n=75 prod turns) * reduction_pct_overall (0.72, n=14 ctx-opt log lines). Public list prices captured 2026-05-20. Input tokens only."
+claude-sonnet-4.5,3.00,0.0554,5.54,55.44,554.42,20236,"saved_per_turn = avg_input_per_turn (25667.8, n=75 prod turns) * reduction_pct_overall (0.72, n=14 ctx-opt log lines). Public list prices captured 2026-05-20. Input tokens only."

@@ -1,0 +1,10 @@
+config,mae,mape,w20r
+full_heuristic,2502.5,18.18,65.41
+no_complexity_scaling,4769.5,35.71,30.81
+no_multi_step,2917.6,20.39,59.46
+no_tool_keywords,2664.0,20.1,60.54
+no_code_keywords,3026.4,23.58,55.14
+no_file_refs,2666.6,19.26,63.24
+no_comparison,2760.4,19.8,62.7
+no_entity_count,3085.5,22.1,57.3
+no_word_adjustment,2595.5,18.81,64.86

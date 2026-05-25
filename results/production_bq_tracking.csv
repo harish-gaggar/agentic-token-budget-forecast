@@ -1,0 +1,7 @@
+table,key,rows,turns,avg_per_turn,window,description
+agent_job_tracking,request_id,75,75,1.00,full population (token metadata),one row per turn
+agent_trajectory,request_id,1069,128,8.35,full population,LangGraph node steps per turn (median 6 p95 20 max 34)
+agent_tool_invocations,request_id,347,123,2.82,full population (turns with at least one tool call),tool calls per turn (median 2 p95 7 max 12)
+agent_quality_eval,request_id,96,12,8.00,24h PR slice only,eight quality dimensions per turn (slice)
+agent_eval_scores,request_id,12,12,1.00,24h PR slice only,composite score per turn (slice)
+agent_quality_metrics_detail,run_id,12,12,1.00,24h PR slice only,detail row per turn (slice)

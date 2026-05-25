@@ -1,0 +1,9 @@
+{
+  "extracted_at_utc": "2026-05-23T22:49:29+00:00",
+  "project": "prod-ck-analytics-data-99",
+  "dataset": "genai_agent_eval_tracking",
+  "agent_name": "bigquery-langgraph-agent",
+  "turns_n": 83,
+  "quality_n": 1014,
+  "notes": "Pulled by experiments/prod_extract.py. Replaces the older snapshot (75 turns, 12 quality rows) with the latest population."
+}

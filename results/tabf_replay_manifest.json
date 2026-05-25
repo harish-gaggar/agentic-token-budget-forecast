@@ -1,0 +1,5 @@
+{
+  "n_turns": 83,
+  "static_baseline_value": 10169,
+  "notes": "Stage 1 evaluates TABF as a pure forecaster against actual production token usage. Stage 2 treats the forecast as a max_tokens cap and reports over-budget share + slack quantiles."
+}

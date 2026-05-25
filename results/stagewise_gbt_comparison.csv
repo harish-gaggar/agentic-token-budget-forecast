@@ -1,0 +1,13 @@
+model,stage,w20r
+TABF_gbt_redistribute,system,40.54
+TABF_gbt_redistribute,tools,58.92
+TABF_gbt_redistribute,memory,49.73
+TABF_gbt_redistribute,context,63.24
+TABF_gbt_redistribute,reasoning,54.05
+TABF_gbt_redistribute,output,55.14
+TABF_gbt_stagewise,system,77.84
+TABF_gbt_stagewise,tools,61.08
+TABF_gbt_stagewise,memory,65.95
+TABF_gbt_stagewise,context,60.54
+TABF_gbt_stagewise,reasoning,56.76
+TABF_gbt_stagewise,output,55.14

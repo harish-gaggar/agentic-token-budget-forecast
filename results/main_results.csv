@@ -1,0 +1,11 @@
+method,mae,mape,w20r
+B1_uniform,4497.0,50.19,28.11
+B2_type_only,4839.1,36.23,30.27
+B3_length,3981.8,38.4,34.05
+B4_ridge_hand,2288.6,21.68,55.68
+B5_rf_hand,1883.2,15.9,74.05
+B6_histgb_hand,1876.7,15.87,73.51
+B7_ridge_tfidf,1889.9,17.26,64.32
+B8_histgb_tfidf,2036.5,17.49,69.73
+TABF_heuristic,2502.5,18.18,65.41
+TABF_gbt,1882.1,15.9,74.05

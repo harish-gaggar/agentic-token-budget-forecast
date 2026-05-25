@@ -1,0 +1,5 @@
+model,mae,mape,w20r,metric
+TABF_gbt_redistribute,1882.07,15.9,74.05,
+TABF_gbt_stagewise,1882.47,15.9,73.51,
+TABF_gbt_redistribute,,,53.6,mean_stage_w20r
+TABF_gbt_stagewise,,,62.88,mean_stage_w20r

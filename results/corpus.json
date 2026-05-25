@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "t0000",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0001",
+    "text": "Plan a three-phase migration of user-auth from Python to TypeScript. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0002",
+    "text": "Restructure the billing-core codebase to split the cart and metrics domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0003",
+    "text": "Document the public API of the redis-py wrapper we use in inventory-svc: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0004",
+    "text": "First, audit the queue module in inventory-svc. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0005",
+    "text": "Write a small helper to parse a phone string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0006",
+    "text": "Write a comprehensive operator guide for feature-flags: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0007",
+    "text": "What is the difference between fastapi and sqlalchemy?",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0008",
+    "text": "First, audit the rate-limit module in search-indexer. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0009",
+    "text": "Design and implement a sharded, lock-free queue in TypeScript that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0010",
+    "text": "Take metrics.parquet and sales_2024.csv and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0011",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0012",
+    "text": "Using metrics.parquet, compare revenue across logistics cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0013",
+    "text": "Use the search tool to find the latest notif-router on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0014",
+    "text": "What is the difference between axios and sqlalchemy?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0015",
+    "text": "Use the search tool to find the latest feature-flags on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0016",
+    "text": "Take transactions.tsv and users.json and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0017",
+    "text": "First, audit the session module in checkout-api. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0018",
+    "text": "The payments-service repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0019",
+    "text": "Write a small helper to parse a date string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0020",
+    "text": "Refactor the pricing module in checkout-api to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0021",
+    "text": "Using logs.txt, compare revenue across logistics cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0022",
+    "text": "Implement a Rust function in the pricing module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0023",
+    "text": "Use the search tool to find the latest user-auth on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0024",
+    "text": "Use the search tool to find the latest user-auth on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0025",
+    "text": "Refactor the rate-limit module in checkout-api to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0026",
+    "text": "Use the search tool to find the latest notif-router on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0027",
+    "text": "Query the metrics API for user-auth over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the audit module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0028",
+    "text": "Design and implement a sharded, lock-free queue in Go that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0029",
+    "text": "The unit test test_metrics_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0030",
+    "text": "Build a Python client for the notif-router service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0031",
+    "text": "Write a comprehensive operator guide for checkout-api: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0032",
+    "text": "Search the company wiki for incident reports tagged session, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0033",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0034",
+    "text": "Build a Java client for the user-auth service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0035",
+    "text": "Write a comprehensive operator guide for search-indexer: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0036",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0037",
+    "text": "Using transactions.tsv, compare revenue across edtech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0038",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a edtech workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0039",
+    "text": "Query the metrics API for inventory-svc over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the queue module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0040",
+    "text": "The billing-core repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0041",
+    "text": "Write a small helper to parse a phone string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0042",
+    "text": "Refactor the metrics module in feature-flags to use dependency injection instead of global singletons.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0043",
+    "text": "Use the search tool to find the latest checkout-api on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0044",
+    "text": "Implement a Java function in the metrics module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0045",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0046",
+    "text": "Write a small helper to parse a date string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0047",
+    "text": "Document the public API of the fastapi wrapper we use in inventory-svc: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0048",
+    "text": "Users are reporting a crash in the metrics module of payments-service when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0049",
+    "text": "Users are reporting a crash in the session module of notif-router when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0050",
+    "text": "Write a short README section explaining how to run the notif-router service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0051",
+    "text": "Production traffic to user-auth returns 502 errors on the discount endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0052",
+    "text": "Use the search tool to find the latest inventory-svc on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0053",
+    "text": "Search the company wiki for incident reports tagged audit, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0054",
+    "text": "Users are reporting a crash in the pricing module of billing-core when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0055",
+    "text": "Implement a Go function in the audit module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0056",
+    "text": "First, audit the queue module in payments-service. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0057",
+    "text": "Plan a three-phase migration of inventory-svc from Python to Java. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0058",
+    "text": "The search-indexer repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0059",
+    "text": "Production traffic to inventory-svc returns 502 errors on the session endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0060",
+    "text": "Build a Go client for the inventory-svc service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0061",
+    "text": "Production traffic to billing-core returns 502 errors on the metrics endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0062",
+    "text": "Load logs.txt and produce a summary of the top 10 users by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0063",
+    "text": "Document the public API of the numpy wrapper we use in notif-router: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0064",
+    "text": "Production traffic to notif-router returns 502 errors on the cart endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0065",
+    "text": "Write a comprehensive operator guide for billing-core: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0066",
+    "text": "Load logs.txt and produce a summary of the top 10 regions by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0067",
+    "text": "Take sales_2024.csv and events.jsonl and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0068",
+    "text": "Restructure the user-auth codebase to split the pricing and cart domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0069",
+    "text": "First, audit the discount module in billing-core. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0070",
+    "text": "Write a small helper to parse a currency string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0071",
+    "text": "Document the public API of the axios wrapper we use in user-auth: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0072",
+    "text": "Build a Java client for the inventory-svc service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0073",
+    "text": "Document the public API of the numpy wrapper we use in search-indexer: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0074",
+    "text": "First, audit the cart module in inventory-svc. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0075",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a e-commerce workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0076",
+    "text": "Users are reporting a crash in the auth module of user-auth when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0077",
+    "text": "Write a comprehensive operator guide for billing-core: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0078",
+    "text": "First, audit the cart module in feature-flags. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0079",
+    "text": "Query the metrics API for user-auth over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the rate-limit module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0080",
+    "text": "What is the difference between numpy and redis-py?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0081",
+    "text": "Write a short README section explaining how to run the billing-core service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0082",
+    "text": "Write a short README section explaining how to run the inventory-svc service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0083",
+    "text": "Build a Rust client for the payments-service service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0084",
+    "text": "Document the public API of the tokio wrapper we use in payments-service: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0085",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0086",
+    "text": "Using transactions.tsv, compare revenue across fintech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0087",
+    "text": "Using users.json, compare revenue across healthtech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0088",
+    "text": "Use the search tool to find the latest user-auth on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0089",
+    "text": "What is the difference between sqlalchemy and redis-py?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0090",
+    "text": "Load users.json and produce a summary of the top 10 endpoints by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0091",
+    "text": "Restructure the search-indexer codebase to split the audit and shipping domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0092",
+    "text": "Users are reporting a crash in the cart module of user-auth when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0093",
+    "text": "Refactor the session module in checkout-api to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0094",
+    "text": "Production traffic to search-indexer returns 502 errors on the metrics endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0095",
+    "text": "Query the metrics API for notif-router over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the shipping module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0096",
+    "text": "Search the company wiki for incident reports tagged rate-limit, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0097",
+    "text": "What is the difference between numpy and axios?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0098",
+    "text": "Design and implement a sharded, lock-free queue in Python that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0099",
+    "text": "Restructure the billing-core codebase to split the shipping and audit domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0100",
+    "text": "Refactor the discount module in search-indexer to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0101",
+    "text": "Write a short README section explaining how to run the feature-flags service locally.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0102",
+    "text": "Write a small helper to parse a currency string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0103",
+    "text": "Restructure the billing-core codebase to split the cart and cart domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0104",
+    "text": "Using events.jsonl, compare revenue across e-commerce cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0105",
+    "text": "Document the public API of the axios wrapper we use in billing-core: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0106",
+    "text": "Query the metrics API for checkout-api over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the queue module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0107",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a e-commerce workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0108",
+    "text": "Plan a three-phase migration of user-auth from Python to Rust. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0109",
+    "text": "Production traffic to checkout-api returns 502 errors on the auth endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0110",
+    "text": "Write a comprehensive operator guide for billing-core: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0111",
+    "text": "What is the difference between fastapi and fastapi?",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0112",
+    "text": "The unit test test_shipping_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0113",
+    "text": "Users are reporting a crash in the auth module of search-indexer when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0114",
+    "text": "Users are reporting a crash in the rate-limit module of payments-service when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0115",
+    "text": "Use the search tool to find the latest user-auth on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0116",
+    "text": "Write a comprehensive operator guide for inventory-svc: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0117",
+    "text": "Document the public API of the redis-py wrapper we use in notif-router: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0118",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a healthtech workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0119",
+    "text": "Document the public API of the tokio wrapper we use in feature-flags: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0120",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0121",
+    "text": "Query the metrics API for payments-service over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the metrics module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0122",
+    "text": "Document the public API of the tokio wrapper we use in feature-flags: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0123",
+    "text": "Take metrics.parquet and logs.txt and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0124",
+    "text": "Build a Go client for the billing-core service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0125",
+    "text": "Users are reporting a crash in the auth module of checkout-api when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0126",
+    "text": "Build a Java client for the payments-service service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0127",
+    "text": "The search-indexer repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0128",
+    "text": "Write a short README section explaining how to run the inventory-svc service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0129",
+    "text": "Production traffic to billing-core returns 502 errors on the session endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0130",
+    "text": "Document the public API of the tokio wrapper we use in user-auth: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0131",
+    "text": "Use the search tool to find the latest inventory-svc on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0132",
+    "text": "Document the public API of the numpy wrapper we use in billing-core: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0133",
+    "text": "Document the public API of the requests wrapper we use in inventory-svc: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0134",
+    "text": "The unit test test_auth_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0135",
+    "text": "First, audit the metrics module in payments-service. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0136",
+    "text": "Load sales_2024.csv and produce a summary of the top 10 regions by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0137",
+    "text": "Using events.jsonl, compare revenue across edtech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0138",
+    "text": "Implement a Go function in the shipping module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0139",
+    "text": "Write a comprehensive operator guide for notif-router: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0140",
+    "text": "Production traffic to checkout-api returns 502 errors on the pricing endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0141",
+    "text": "Restructure the user-auth codebase to split the session and audit domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0142",
+    "text": "Using logs.txt, compare revenue across e-commerce cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0143",
+    "text": "Design and implement a sharded, lock-free queue in Rust that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0144",
+    "text": "First, audit the queue module in billing-core. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0145",
+    "text": "Plan a three-phase migration of inventory-svc from Java to Go. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0146",
+    "text": "The billing-core repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0147",
+    "text": "Production traffic to feature-flags returns 502 errors on the audit endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0148",
+    "text": "Design and implement a sharded, lock-free queue in Go that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0149",
+    "text": "What is the difference between axios and sqlalchemy?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0150",
+    "text": "Design and implement a sharded, lock-free queue in Rust that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0151",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a fintech workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0152",
+    "text": "Production traffic to feature-flags returns 502 errors on the metrics endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0153",
+    "text": "Load metrics.parquet and produce a summary of the top 10 regions by total volume.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0154",
+    "text": "Using events.jsonl, compare revenue across e-commerce cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0155",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0156",
+    "text": "Use the search tool to find the latest notif-router on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0157",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a healthtech workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0158",
+    "text": "Restructure the inventory-svc codebase to split the queue and shipping domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0159",
+    "text": "Production traffic to payments-service returns 502 errors on the cart endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0160",
+    "text": "The user-auth repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0161",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a healthtech workload?",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0162",
+    "text": "Production traffic to inventory-svc returns 502 errors on the auth endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0163",
+    "text": "The checkout-api repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0164",
+    "text": "First, audit the pricing module in feature-flags. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0165",
+    "text": "Write a short README section explaining how to run the user-auth service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0166",
+    "text": "Using events.jsonl, compare revenue across e-commerce cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0167",
+    "text": "What is the difference between fastapi and pandas?",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0168",
+    "text": "Using logs.txt, compare revenue across edtech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0169",
+    "text": "The unit test test_pricing_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0170",
+    "text": "Search the company wiki for incident reports tagged session, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0171",
+    "text": "Take users.json and logs.txt and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0172",
+    "text": "Restructure the user-auth codebase to split the rate-limit and auth domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0173",
+    "text": "The unit test test_queue_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0174",
+    "text": "Write a comprehensive operator guide for notif-router: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0175",
+    "text": "Refactor the discount module in checkout-api to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0176",
+    "text": "Search the company wiki for incident reports tagged discount, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0177",
+    "text": "Refactor the shipping module in feature-flags to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0178",
+    "text": "What is the difference between redis-py and pandas?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0179",
+    "text": "Production traffic to feature-flags returns 502 errors on the session endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0180",
+    "text": "What is the difference between numpy and fastapi?",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0181",
+    "text": "Use the search tool to find the latest notif-router on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0182",
+    "text": "Production traffic to search-indexer returns 502 errors on the audit endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0183",
+    "text": "Write a comprehensive operator guide for notif-router: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0184",
+    "text": "Restructure the payments-service codebase to split the discount and shipping domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0185",
+    "text": "Write a comprehensive operator guide for billing-core: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0186",
+    "text": "Load logs.txt and produce a summary of the top 10 skus by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0187",
+    "text": "Build a Java client for the payments-service service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0188",
+    "text": "Document the public API of the tokio wrapper we use in checkout-api: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0189",
+    "text": "Search the company wiki for incident reports tagged audit, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0190",
+    "text": "Query the metrics API for payments-service over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the session module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0191",
+    "text": "Implement a Java function in the discount module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0192",
+    "text": "The user-auth repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0193",
+    "text": "Implement a Rust function in the audit module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0194",
+    "text": "The unit test test_discount_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0195",
+    "text": "Restructure the user-auth codebase to split the audit and metrics domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0196",
+    "text": "Use the search tool to find the latest inventory-svc on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0197",
+    "text": "Refactor the cart module in checkout-api to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0198",
+    "text": "Using sales_2024.csv, compare revenue across fintech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0199",
+    "text": "What is the difference between requests and axios?",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0200",
+    "text": "Search the company wiki for incident reports tagged rate-limit, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0201",
+    "text": "Production traffic to inventory-svc returns 502 errors on the pricing endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0202",
+    "text": "Document the public API of the redis-py wrapper we use in notif-router: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0203",
+    "text": "The unit test test_session_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0204",
+    "text": "The payments-service repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0205",
+    "text": "Query the metrics API for notif-router over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the cart module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0206",
+    "text": "Write a small helper to parse a date string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0207",
+    "text": "Use the search tool to find the latest user-auth on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0208",
+    "text": "Write a small helper to parse a phone string and return a normalised value.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0209",
+    "text": "Plan a three-phase migration of inventory-svc from Go to Python. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0210",
+    "text": "Restructure the user-auth codebase to split the pricing and discount domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0211",
+    "text": "Build a Python client for the checkout-api service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0212",
+    "text": "Search the company wiki for incident reports tagged queue, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0213",
+    "text": "Take transactions.tsv and users.json and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0214",
+    "text": "Restructure the checkout-api codebase to split the session and pricing domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0215",
+    "text": "Use the search tool to find the latest checkout-api on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0216",
+    "text": "Take metrics.parquet and users.json and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0217",
+    "text": "First, audit the metrics module in billing-core. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0218",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0219",
+    "text": "Production traffic to user-auth returns 502 errors on the auth endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0220",
+    "text": "Users are reporting a crash in the metrics module of inventory-svc when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0221",
+    "text": "The user-auth repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0222",
+    "text": "First, audit the pricing module in inventory-svc. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0223",
+    "text": "Take users.json and transactions.tsv and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0224",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0225",
+    "text": "Write a small helper to parse a date string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0226",
+    "text": "The billing-core repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0227",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0228",
+    "text": "Use the search tool to find the latest notif-router on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0229",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0230",
+    "text": "What is the difference between numpy and fastapi?",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0231",
+    "text": "Write a small helper to parse a date string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0232",
+    "text": "Write a small helper to parse a date string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0233",
+    "text": "First, audit the metrics module in checkout-api. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0234",
+    "text": "Write a comprehensive operator guide for payments-service: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0235",
+    "text": "Implement a TypeScript function in the pricing module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0236",
+    "text": "First, audit the shipping module in checkout-api. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0237",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0238",
+    "text": "Refactor the pricing module in inventory-svc to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0239",
+    "text": "What is the difference between fastapi and redis-py?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0240",
+    "text": "Production traffic to feature-flags returns 502 errors on the shipping endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0241",
+    "text": "Production traffic to checkout-api returns 502 errors on the session endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0242",
+    "text": "Use the search tool to find the latest feature-flags on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0243",
+    "text": "Load users.json and produce a summary of the top 10 regions by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0244",
+    "text": "Implement a Go function in the metrics module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0245",
+    "text": "The checkout-api repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0246",
+    "text": "Load events.jsonl and produce a summary of the top 10 endpoints by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0247",
+    "text": "Use the search tool to find the latest payments-service on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0248",
+    "text": "Write a small helper to parse a date string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0249",
+    "text": "Users are reporting a crash in the discount module of search-indexer when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0250",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0251",
+    "text": "Plan a three-phase migration of notif-router from Java to Rust. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0252",
+    "text": "The unit test test_audit_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0253",
+    "text": "Write a small helper to parse a date string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0254",
+    "text": "Query the metrics API for notif-router over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the metrics module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0255",
+    "text": "Write a small helper to parse a date string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0256",
+    "text": "Load logs.txt and produce a summary of the top 10 regions by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0257",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0258",
+    "text": "Use the search tool to find the latest inventory-svc on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0259",
+    "text": "The unit test test_audit_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0260",
+    "text": "Write a short README section explaining how to run the notif-router service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0261",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a fintech workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0262",
+    "text": "Production traffic to user-auth returns 502 errors on the metrics endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0263",
+    "text": "The search-indexer repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0264",
+    "text": "Production traffic to search-indexer returns 502 errors on the audit endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0265",
+    "text": "Write a comprehensive operator guide for inventory-svc: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0266",
+    "text": "Build a TypeScript client for the search-indexer service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0267",
+    "text": "Design and implement a sharded, lock-free queue in Go that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0268",
+    "text": "Use the search tool to find the latest search-indexer on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0269",
+    "text": "Load events.jsonl and produce a summary of the top 10 skus by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0270",
+    "text": "The unit test test_discount_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0271",
+    "text": "Refactor the metrics module in billing-core to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0272",
+    "text": "The billing-core repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0273",
+    "text": "Load users.json and produce a summary of the top 10 users by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0274",
+    "text": "First, audit the queue module in checkout-api. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0275",
+    "text": "Using sales_2024.csv, compare revenue across e-commerce cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0276",
+    "text": "Write a small helper to parse a phone string and return a normalised value.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0277",
+    "text": "Refactor the shipping module in inventory-svc to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0278",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a logistics workload?",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0279",
+    "text": "First, audit the cart module in notif-router. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0280",
+    "text": "Implement a Java function in the session module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0281",
+    "text": "Production traffic to inventory-svc returns 502 errors on the session endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0282",
+    "text": "Write a short README section explaining how to run the billing-core service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0283",
+    "text": "Query the metrics API for search-indexer over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the metrics module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0284",
+    "text": "What is the difference between sqlalchemy and redis-py?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0285",
+    "text": "Refactor the cart module in billing-core to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0286",
+    "text": "Production traffic to search-indexer returns 502 errors on the rate-limit endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0287",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0288",
+    "text": "Load sales_2024.csv and produce a summary of the top 10 skus by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0289",
+    "text": "Plan a three-phase migration of checkout-api from Rust to Java. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0290",
+    "text": "The feature-flags repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0291",
+    "text": "First, audit the shipping module in feature-flags. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0292",
+    "text": "Query the metrics API for inventory-svc over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the shipping module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0293",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0294",
+    "text": "Write a short README section explaining how to run the inventory-svc service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0295",
+    "text": "Build a Rust client for the notif-router service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0296",
+    "text": "Implement a Java function in the rate-limit module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0297",
+    "text": "Refactor the metrics module in inventory-svc to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0298",
+    "text": "Document the public API of the tokio wrapper we use in checkout-api: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0299",
+    "text": "Implement a Python function in the metrics module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0300",
+    "text": "Write a comprehensive operator guide for payments-service: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0301",
+    "text": "Use the search tool to find the latest user-auth on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0302",
+    "text": "Load users.json and produce a summary of the top 10 endpoints by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0303",
+    "text": "Build a Python client for the billing-core service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0304",
+    "text": "Search the company wiki for incident reports tagged rate-limit, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0305",
+    "text": "Refactor the audit module in search-indexer to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0306",
+    "text": "Document the public API of the numpy wrapper we use in user-auth: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0307",
+    "text": "Load metrics.parquet and produce a summary of the top 10 endpoints by total volume.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0308",
+    "text": "Load transactions.tsv and produce a summary of the top 10 endpoints by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0309",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a logistics workload?",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0310",
+    "text": "Write a short README section explaining how to run the user-auth service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0311",
+    "text": "Document the public API of the pandas wrapper we use in inventory-svc: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0312",
+    "text": "Refactor the metrics module in payments-service to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0313",
+    "text": "Restructure the payments-service codebase to split the session and rate-limit domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0314",
+    "text": "Use the search tool to find the latest search-indexer on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0315",
+    "text": "Query the metrics API for payments-service over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the session module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0316",
+    "text": "The inventory-svc repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0317",
+    "text": "Write a comprehensive operator guide for inventory-svc: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0318",
+    "text": "Use the search tool to find the latest user-auth on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0319",
+    "text": "Search the company wiki for incident reports tagged metrics, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0320",
+    "text": "Write a comprehensive operator guide for search-indexer: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0321",
+    "text": "Users are reporting a crash in the session module of billing-core when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0322",
+    "text": "Production traffic to user-auth returns 502 errors on the cart endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0323",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0324",
+    "text": "Document the public API of the numpy wrapper we use in notif-router: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0325",
+    "text": "Load events.jsonl and produce a summary of the top 10 users by total volume.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0326",
+    "text": "Write a comprehensive operator guide for payments-service: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0327",
+    "text": "Query the metrics API for feature-flags over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the cart module.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0328",
+    "text": "Use the search tool to find the latest billing-core on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0329",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0330",
+    "text": "The unit test test_rate-limit_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0331",
+    "text": "First, audit the metrics module in billing-core. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0332",
+    "text": "Using events.jsonl, compare revenue across logistics cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0333",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0334",
+    "text": "What is the difference between numpy and sqlalchemy?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0335",
+    "text": "Take events.jsonl and logs.txt and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0336",
+    "text": "Write a small helper to parse a currency string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0337",
+    "text": "Refactor the audit module in payments-service to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0338",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a edtech workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0339",
+    "text": "Users are reporting a crash in the shipping module of search-indexer when uploading large files. Find and fix the bug.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0340",
+    "text": "Write a comprehensive operator guide for inventory-svc: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0341",
+    "text": "Users are reporting a crash in the metrics module of checkout-api when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0342",
+    "text": "Implement a Java function in the session module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0343",
+    "text": "First, audit the discount module in inventory-svc. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0344",
+    "text": "Write a short README section explaining how to run the inventory-svc service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0345",
+    "text": "Build a Go client for the payments-service service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0346",
+    "text": "First, audit the pricing module in user-auth. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0347",
+    "text": "What is the difference between axios and requests?",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0348",
+    "text": "Production traffic to search-indexer returns 502 errors on the audit endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0349",
+    "text": "Restructure the feature-flags codebase to split the audit and metrics domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0350",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0351",
+    "text": "First, audit the shipping module in payments-service. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0352",
+    "text": "Write a small helper to parse a phone string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0353",
+    "text": "Design and implement a sharded, lock-free queue in Rust that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0354",
+    "text": "Restructure the notif-router codebase to split the audit and discount domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0355",
+    "text": "Search the company wiki for incident reports tagged session, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0356",
+    "text": "Write a short README section explaining how to run the notif-router service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0357",
+    "text": "Restructure the feature-flags codebase to split the discount and metrics domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0358",
+    "text": "Load users.json and produce a summary of the top 10 regions by total volume.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0359",
+    "text": "Refactor the session module in user-auth to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0360",
+    "text": "Implement a TypeScript function in the queue module that validates incoming requests and returns a typed error.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0361",
+    "text": "Production traffic to user-auth returns 502 errors on the auth endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0362",
+    "text": "Design and implement a sharded, lock-free queue in Go that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0363",
+    "text": "Document the public API of the numpy wrapper we use in payments-service: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0364",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a e-commerce workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0365",
+    "text": "Implement a Rust function in the pricing module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0366",
+    "text": "Using events.jsonl, compare revenue across logistics cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0367",
+    "text": "Using sales_2024.csv, compare revenue across healthtech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0368",
+    "text": "Take users.json and metrics.parquet and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0369",
+    "text": "Document the public API of the pandas wrapper we use in billing-core: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0370",
+    "text": "Take metrics.parquet and sales_2024.csv and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0371",
+    "text": "Query the metrics API for notif-router over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the cart module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0372",
+    "text": "Query the metrics API for user-auth over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the shipping module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0373",
+    "text": "The unit test test_cart_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0374",
+    "text": "The unit test test_session_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0375",
+    "text": "Take sales_2024.csv and users.json and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0376",
+    "text": "Document the public API of the numpy wrapper we use in user-auth: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0377",
+    "text": "Design and implement a sharded, lock-free queue in Rust that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0378",
+    "text": "Build a Go client for the inventory-svc service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0379",
+    "text": "Using events.jsonl, compare revenue across fintech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0380",
+    "text": "Restructure the billing-core codebase to split the queue and pricing domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0381",
+    "text": "Using transactions.tsv, compare revenue across logistics cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0382",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0383",
+    "text": "Take sales_2024.csv and metrics.parquet and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0384",
+    "text": "What is the difference between numpy and requests?",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0385",
+    "text": "First, audit the session module in notif-router. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0386",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a fintech workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0387",
+    "text": "Restructure the feature-flags codebase to split the cart and cart domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0388",
+    "text": "What is the difference between numpy and tokio?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0389",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0390",
+    "text": "Document the public API of the numpy wrapper we use in notif-router: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0391",
+    "text": "Design and implement a sharded, lock-free queue in TypeScript that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0392",
+    "text": "Search the company wiki for incident reports tagged cart, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0393",
+    "text": "Refactor the session module in billing-core to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0394",
+    "text": "Load logs.txt and produce a summary of the top 10 regions by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0395",
+    "text": "Restructure the user-auth codebase to split the rate-limit and session domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0396",
+    "text": "Use the search tool to find the latest payments-service on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0397",
+    "text": "Use the search tool to find the latest billing-core on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0398",
+    "text": "The checkout-api repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0399",
+    "text": "Users are reporting a crash in the rate-limit module of checkout-api when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0400",
+    "text": "Write a small helper to parse a date string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0401",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a e-commerce workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0402",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0403",
+    "text": "Users are reporting a crash in the metrics module of feature-flags when uploading large files. Find and fix the bug.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0404",
+    "text": "Search the company wiki for incident reports tagged session, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0405",
+    "text": "The user-auth repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0406",
+    "text": "Restructure the search-indexer codebase to split the cart and auth domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0407",
+    "text": "Restructure the checkout-api codebase to split the rate-limit and rate-limit domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0408",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0409",
+    "text": "What is the difference between tokio and numpy?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0410",
+    "text": "What is the difference between sqlalchemy and axios?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0411",
+    "text": "Query the metrics API for checkout-api over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the discount module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0412",
+    "text": "Users are reporting a crash in the session module of inventory-svc when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0413",
+    "text": "Document the public API of the sqlalchemy wrapper we use in feature-flags: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0414",
+    "text": "Design and implement a sharded, lock-free queue in TypeScript that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0415",
+    "text": "Production traffic to user-auth returns 502 errors on the pricing endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0416",
+    "text": "Load logs.txt and produce a summary of the top 10 users by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0417",
+    "text": "Search the company wiki for incident reports tagged shipping, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0418",
+    "text": "Query the metrics API for notif-router over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the metrics module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0419",
+    "text": "Production traffic to payments-service returns 502 errors on the auth endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0420",
+    "text": "Implement a TypeScript function in the shipping module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0421",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a e-commerce workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0422",
+    "text": "Plan a three-phase migration of search-indexer from TypeScript to Python. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0423",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0424",
+    "text": "Users are reporting a crash in the queue module of payments-service when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0425",
+    "text": "Document the public API of the tokio wrapper we use in notif-router: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0426",
+    "text": "Document the public API of the pandas wrapper we use in inventory-svc: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0427",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0428",
+    "text": "Write a short README section explaining how to run the inventory-svc service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0429",
+    "text": "Refactor the metrics module in payments-service to use dependency injection instead of global singletons.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0430",
+    "text": "Query the metrics API for payments-service over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the pricing module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0431",
+    "text": "Refactor the discount module in user-auth to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0432",
+    "text": "Query the metrics API for notif-router over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the audit module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0433",
+    "text": "Document the public API of the axios wrapper we use in notif-router: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0434",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0435",
+    "text": "Load sales_2024.csv and produce a summary of the top 10 endpoints by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0436",
+    "text": "What is the difference between tokio and numpy?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0437",
+    "text": "Production traffic to search-indexer returns 502 errors on the auth endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0438",
+    "text": "Restructure the search-indexer codebase to split the metrics and auth domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0439",
+    "text": "Production traffic to feature-flags returns 502 errors on the cart endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0440",
+    "text": "Restructure the inventory-svc codebase to split the pricing and shipping domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0441",
+    "text": "Search the company wiki for incident reports tagged auth, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0442",
+    "text": "Use the search tool to find the latest user-auth on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0443",
+    "text": "Take events.jsonl and metrics.parquet and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0444",
+    "text": "Query the metrics API for billing-core over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the rate-limit module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0445",
+    "text": "Search the company wiki for incident reports tagged cart, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0446",
+    "text": "Query the metrics API for checkout-api over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the pricing module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0447",
+    "text": "Write a comprehensive operator guide for notif-router: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0448",
+    "text": "Document the public API of the fastapi wrapper we use in checkout-api: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0449",
+    "text": "Using events.jsonl, compare revenue across logistics cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0450",
+    "text": "Document the public API of the axios wrapper we use in billing-core: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0451",
+    "text": "Implement a TypeScript function in the metrics module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0452",
+    "text": "Refactor the rate-limit module in notif-router to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0453",
+    "text": "Document the public API of the pandas wrapper we use in search-indexer: every function, its arguments, return value, and a small example.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0454",
+    "text": "Using transactions.tsv, compare revenue across edtech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0455",
+    "text": "Use the search tool to find the latest feature-flags on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0456",
+    "text": "Use the search tool to find the latest payments-service on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0457",
+    "text": "Build a Rust client for the inventory-svc service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0458",
+    "text": "Document the public API of the requests wrapper we use in notif-router: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0459",
+    "text": "The billing-core repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0460",
+    "text": "Query the metrics API for billing-core over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the cart module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0461",
+    "text": "Refactor the audit module in payments-service to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0462",
+    "text": "First, audit the shipping module in billing-core. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0463",
+    "text": "First, audit the shipping module in payments-service. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0464",
+    "text": "First, audit the session module in payments-service. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0465",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0466",
+    "text": "Take metrics.parquet and metrics.parquet and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0467",
+    "text": "Load sales_2024.csv and produce a summary of the top 10 skus by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0468",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a fintech workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0469",
+    "text": "Users are reporting a crash in the audit module of payments-service when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0470",
+    "text": "Write a short README section explaining how to run the notif-router service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0471",
+    "text": "Write a small helper to parse a date string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0472",
+    "text": "Restructure the search-indexer codebase to split the queue and audit domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0473",
+    "text": "Take events.jsonl and transactions.tsv and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0474",
+    "text": "What is the difference between tokio and redis-py?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0475",
+    "text": "Load transactions.tsv and produce a summary of the top 10 skus by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0476",
+    "text": "Query the metrics API for user-auth over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the audit module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0477",
+    "text": "The notif-router repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0478",
+    "text": "Load events.jsonl and produce a summary of the top 10 regions by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0479",
+    "text": "First, audit the cart module in payments-service. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0480",
+    "text": "Restructure the payments-service codebase to split the auth and audit domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0481",
+    "text": "Query the metrics API for billing-core over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the queue module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0482",
+    "text": "The unit test test_auth_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0483",
+    "text": "Use the search tool to find the latest inventory-svc on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0484",
+    "text": "The payments-service repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0485",
+    "text": "Plan a three-phase migration of billing-core from Java to TypeScript. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0486",
+    "text": "Build a TypeScript client for the feature-flags service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0487",
+    "text": "Document the public API of the sqlalchemy wrapper we use in feature-flags: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0488",
+    "text": "Implement a Rust function in the discount module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0489",
+    "text": "Refactor the rate-limit module in notif-router to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0490",
+    "text": "Users are reporting a crash in the discount module of feature-flags when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0491",
+    "text": "Query the metrics API for inventory-svc over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the auth module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0492",
+    "text": "Users are reporting a crash in the audit module of search-indexer when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0493",
+    "text": "First, audit the metrics module in inventory-svc. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0494",
+    "text": "Build a Go client for the notif-router service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0495",
+    "text": "The unit test test_session_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0496",
+    "text": "Write a small helper to parse a phone string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0497",
+    "text": "The user-auth repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0498",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a fintech workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0499",
+    "text": "Write a short README section explaining how to run the feature-flags service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0500",
+    "text": "Write a comprehensive operator guide for notif-router: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0501",
+    "text": "Build a Java client for the inventory-svc service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0502",
+    "text": "Write a comprehensive operator guide for notif-router: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0503",
+    "text": "Write a comprehensive operator guide for notif-router: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0504",
+    "text": "Document the public API of the tokio wrapper we use in billing-core: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0505",
+    "text": "Query the metrics API for user-auth over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the session module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0506",
+    "text": "Write a small helper to parse a phone string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0507",
+    "text": "Production traffic to inventory-svc returns 502 errors on the session endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0508",
+    "text": "Write a small helper to parse a currency string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0509",
+    "text": "Using sales_2024.csv, compare revenue across edtech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0510",
+    "text": "Use the search tool to find the latest checkout-api on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0511",
+    "text": "Build a Java client for the feature-flags service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0512",
+    "text": "Plan a three-phase migration of checkout-api from Java to Java. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0513",
+    "text": "What is the difference between sqlalchemy and pandas?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0514",
+    "text": "Restructure the inventory-svc codebase to split the metrics and session domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0515",
+    "text": "The feature-flags repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0516",
+    "text": "Write a small helper to parse a phone string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0517",
+    "text": "Users are reporting a crash in the session module of inventory-svc when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0518",
+    "text": "Write a comprehensive operator guide for inventory-svc: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0519",
+    "text": "Using transactions.tsv, compare revenue across edtech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0520",
+    "text": "Using logs.txt, compare revenue across logistics cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0521",
+    "text": "Write a comprehensive operator guide for payments-service: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0522",
+    "text": "Build a Rust client for the billing-core service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0523",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a e-commerce workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0524",
+    "text": "The inventory-svc repo has duplicated request-handling logic in three places. Extract a shared middleware and migrate all call sites. Preserve behaviour and existing tests.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0525",
+    "text": "Search the company wiki for incident reports tagged metrics, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0526",
+    "text": "Users are reporting a crash in the audit module of notif-router when uploading large files. Find and fix the bug.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0527",
+    "text": "Plan a three-phase migration of payments-service from Java to Rust. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0528",
+    "text": "Design and implement a sharded, lock-free queue in Go that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0529",
+    "text": "Write a comprehensive operator guide for feature-flags: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0530",
+    "text": "Plan a three-phase migration of billing-core from Java to TypeScript. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0531",
+    "text": "The unit test test_cart_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0532",
+    "text": "Write a short README section explaining how to run the checkout-api service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0533",
+    "text": "Document the public API of the tokio wrapper we use in notif-router: every function, its arguments, return value, and a small example.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0534",
+    "text": "Take metrics.parquet and logs.txt and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0535",
+    "text": "Search the company wiki for incident reports tagged shipping, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0536",
+    "text": "Write a small helper to parse a date string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0537",
+    "text": "Write a small helper to parse a phone string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0538",
+    "text": "The unit test test_queue_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "multi_step_plan",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0539",
+    "text": "Plan a three-phase migration of billing-core from Rust to Java. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0540",
+    "text": "The unit test test_shipping_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0541",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a healthtech workload?",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0542",
+    "text": "Take transactions.tsv and sales_2024.csv and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0543",
+    "text": "Restructure the billing-core codebase to split the metrics and session domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0544",
+    "text": "Plan a three-phase migration of feature-flags from TypeScript to TypeScript. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0545",
+    "text": "Write a comprehensive operator guide for inventory-svc: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0546",
+    "text": "Production traffic to checkout-api returns 502 errors on the metrics endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0547",
+    "text": "Production traffic to inventory-svc returns 502 errors on the rate-limit endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0548",
+    "text": "Write a comprehensive operator guide for inventory-svc: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0549",
+    "text": "Design and implement a sharded, lock-free queue in TypeScript that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0550",
+    "text": "Refactor the cart module in feature-flags to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0551",
+    "text": "Design and implement a sharded, lock-free queue in Python that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0552",
+    "text": "Design and implement a sharded, lock-free queue in Python that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0553",
+    "text": "Production traffic to billing-core returns 502 errors on the session endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0554",
+    "text": "Production traffic to billing-core returns 502 errors on the pricing endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0555",
+    "text": "Restructure the payments-service codebase to split the rate-limit and cart domains into separate packages. Document the migration steps, update the build, and provide a rollback plan.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0556",
+    "text": "The unit test test_session_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0557",
+    "text": "Write a short README section explaining how to run the checkout-api service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0558",
+    "text": "Using events.jsonl, compare revenue across logistics cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0559",
+    "text": "Plan a three-phase migration of billing-core from Python to Go. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0560",
+    "text": "Using users.json, compare revenue across fintech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0561",
+    "text": "Search the company wiki for incident reports tagged pricing, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0562",
+    "text": "Write a comprehensive operator guide for feature-flags: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0563",
+    "text": "Use the search tool to find the latest search-indexer on-call runbook, execute the read-only health checks it references, query the database for stuck jobs, then post a status update via the webhook endpoint and file a ticket if any check failed.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0564",
+    "text": "Plan a three-phase migration of feature-flags from Java to Python. Each phase should call out scope, risks, and rollback triggers. Then estimate engineering effort per phase.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0565",
+    "text": "First, audit the shipping module in search-indexer. Then list its external dependencies. Finally, propose a phased upgrade plan.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0566",
+    "text": "Query the metrics API for notif-router over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the shipping module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0567",
+    "text": "Build a Go client for the search-indexer service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0568",
+    "text": "Production traffic to search-indexer returns 502 errors on the pricing endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0569",
+    "text": "Using metrics.parquet, compare revenue across healthtech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0570",
+    "text": "Query the metrics API for payments-service over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the pricing module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0571",
+    "text": "Write a comprehensive operator guide for checkout-api: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0572",
+    "text": "What is the difference between numpy and fastapi?",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0573",
+    "text": "Build a Go client for the inventory-svc service with retries, timeouts, and structured logging. Cover the GET, POST and DELETE endpoints.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0574",
+    "text": "Query the metrics API for payments-service over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the rate-limit module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0575",
+    "text": "Users are reporting a crash in the queue module of search-indexer when uploading large files. Find and fix the bug.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0576",
+    "text": "Load transactions.tsv and produce a summary of the top 10 skus by total volume.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0577",
+    "text": "Using transactions.tsv, compare revenue across fintech cohorts month-over-month. Plot the trends, run a significance test, and explain anomalies.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0578",
+    "text": "Write a comprehensive operator guide for billing-core: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0579",
+    "text": "Search the company wiki for incident reports tagged auth, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0580",
+    "text": "Write a small helper to parse a phone string and return a normalised value.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0581",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0582",
+    "text": "Production traffic to payments-service returns 502 errors on the metrics endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0583",
+    "text": "Query the metrics API for notif-router over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the queue module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0584",
+    "text": "Write a comprehensive operator guide for billing-core: deployment, monitoring, alert response, and a runbook for the five most common incidents we've seen this year.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0585",
+    "text": "The unit test test_discount_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0586",
+    "text": "The unit test test_cart_basic fails intermittently. Reproduce and fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0587",
+    "text": "Refactor the shipping module in search-indexer to use dependency injection instead of global singletons.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0588",
+    "text": "Write a short README section explaining how to run the inventory-svc service locally.",
+    "latent_type": "documentation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0589",
+    "text": "Design and implement a sharded, lock-free queue in Rust that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "low"
+  },
+  {
+    "id": "t0590",
+    "text": "Search the company wiki for incident reports tagged pricing, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "refactoring",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0591",
+    "text": "Search the company wiki for incident reports tagged shipping, then fetch the linked Jira tickets and summarise the recurring root causes.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "expert"
+  },
+  {
+    "id": "t0592",
+    "text": "Find recent (2024-2025) papers on agentic LLM context management. Summarise the main techniques, group them by approach, and identify the open problems.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0593",
+    "text": "Take users.json and logs.txt and build a retention model. Compare logistic regression and gradient boosting baselines, report calibration, and write up the methodology.",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0594",
+    "text": "Production traffic to payments-service returns 502 errors on the discount endpoint roughly 0.4% of the time. Diagnose the root cause across the load balancer, app, and database layers and propose a fix.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0595",
+    "text": "Implement a Rust function in the session module that validates incoming requests and returns a typed error.",
+    "latent_type": "bug_fix",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0596",
+    "text": "Query the metrics API for payments-service over the last 30 days, join with the deployment log, then call the alerting endpoint to create a new SLO for the queue module.",
+    "latent_type": "tool_use_chain",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0597",
+    "text": "Survey approaches to rate limiting in distributed systems. Compare token bucket, leaky bucket, and sliding window. Which one suits a logistics workload?",
+    "latent_type": "data_analysis",
+    "latent_complexity_hint": "high"
+  },
+  {
+    "id": "t0598",
+    "text": "Design and implement a sharded, lock-free queue in Go that supports backpressure and per-tenant fairness. Include benchmarks against a baseline mutex queue.",
+    "latent_type": "code_generation",
+    "latent_complexity_hint": "medium"
+  },
+  {
+    "id": "t0599",
+    "text": "Load logs.txt and produce a summary of the top 10 endpoints by total volume.",
+    "latent_type": "research_query",
+    "latent_complexity_hint": "medium"
+  }
+]

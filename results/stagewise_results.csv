@@ -1,0 +1,13 @@
+method,stage,n,mae,mape,w20r,mean_truth,mean_pred
+TABF_heuristic,system,185,134.4,12.88,78.92,966,932
+TABF_heuristic,tools,185,346.9,22.0,58.38,1239,943
+TABF_heuristic,memory,185,245.7,20.63,58.92,895,676
+TABF_heuristic,context,185,1003.4,23.28,48.11,3744,2851
+TABF_heuristic,reasoning,185,742.2,20.8,56.76,2936,2402
+TABF_heuristic,output,185,428.6,23.63,54.05,1679,1472
+TABF_gbt,system,185,261.9,28.35,40.54,966,1162
+TABF_gbt,tools,185,303.9,21.58,58.92,1239,1207
+TABF_gbt,memory,185,214.2,23.11,49.73,895,845
+TABF_gbt,context,185,741.1,20.08,63.24,3744,3605
+TABF_gbt,reasoning,185,688.3,25.18,54.05,2936,3004
+TABF_gbt,output,185,395.9,24.68,55.14,1679,1770

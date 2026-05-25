@@ -1,0 +1,14 @@
+metric,value,notes
+llm_calls_observed,14,real ctx-opt log lines captured during interactive session
+calls_saved,12,delta > 0
+calls_no_op,2,ratio = 1.00 (input already inside budget)
+calls_grew,0,
+tokens_without_optimizer,215438,sum across the 14 observed calls
+tokens_with_optimizer,60250,sum across the 14 observed calls
+tokens_saved,155188,
+reduction_pct_overall,72.0,
+reduction_pct_engaged,74.0,limited to the 12 calls that engaged
+best_compression_ratio,0.12,single-call min
+best_call_before_tokens,14949,
+best_call_after_tokens,1828,
+optimizer_preset,balanced,

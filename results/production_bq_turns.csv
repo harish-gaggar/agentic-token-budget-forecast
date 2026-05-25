@@ -1,0 +1,466 @@
+request_id,ts,input,status,input_tokens,output_tokens,total_tokens,llm_calls,tool_calls,model_id_meta,duration_ms
+d4daf8aa-e6d1-418d-948e-f790883cfca7,2026-05-17 16:31:53,"Re-run that ""Credit Card sector, weekly, visualize"" query in the UI",error,26653,1726,28379,6,3,gpt-4o-mini,8167
+8ccbfe3d-abb2-4edb-8f41-744d4bcb4a94,2026-05-17 16:34:41,"Please run query ""SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `prod-ck-abl-data-53.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;"" and check weekly credit card performance",complete,24523,718,25241,7,5,gpt-4o-mini,33108
+8e7ab74c-0a99-4bcb-9100-d36d77b09699,2026-05-17 17:30:13,What specific marketing strategies were in place during the months with the highest application rates?,complete,31539,1484,33023,9,5,gpt-4o-mini,22153
+9e0130a1-4c6e-4476-8131-e8dc663084fc,2026-05-17 17:31:36,could you please share me some data and,complete,65026,2987,68013,15,9,gpt-4o-mini,46849
+167058c5-efb6-4748-81c4-61b8b0949938,2026-05-17 22:48:19,"please run query and analyze results ""bq query --use_legacy_sql=false --project_id=ck-analytics-orchestration \
+  'SELECT request_id, session_id, status, duration_ms, input_tokens, output_tokens, model_id, SUBSTR(user_query, 1, 80) AS user_query
+   FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking`
+   WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 1 HOUR)
+   ORDER BY ts DESC LIMIT 10'""",complete,25852,829,26681,8,6,gpt-4o-mini,34738
+f3a4efa6-2905-4321-963f-9fb63b50a0ba,2026-05-17 23:38:57,"Please show me last 12 months credit card vertical data
+
+---
+### SQL reference (user-provided context)
+The following SQL was pasted in **⚙ Chat settings → SQL context**. Treat it as the user's starting point: reuse intent, joins, filters, and identifiers where appropriate — **confirm** tables/columns with `describe_table` / tools before running anything; fix syntax or project qualifiers as needed.
+
+```sql
+SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `prod-ck-abl-data-53.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;
+```",complete,37022,1319,38341,9,7,gpt-4o-mini,47342
+1e7d8d6c-053b-4c48-91f7-ea9919c1336a,2026-05-17 23:39:58,"you may use this query ""SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `prod-ck-abl-data-53.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;"" to show data and also create chart
+
+---
+### SQL reference (user-provided context)
+The following SQL was pasted in **⚙ Chat settings → SQL context**. Treat it as the user's starting point: reuse intent, joins, filters, and identifiers where appropriate — **confirm** tables/columns with `describe_table` / tools before running anything; fix syntax or project qualifiers as needed.
+
+```sql
+SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `prod-ck-abl-data-53.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;
+```",complete,54804,2231,57035,12,8,gpt-4o-mini,22535
+071c868e-1187-4dff-97d1-452f6cf67b11,2026-05-17 23:50:23,"Please run query and analyze data and summary and also plot chart for Credit Card revenue for last 12 months . Here is sql QUERY ""SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `prod-ck-abl-data-53.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;""
+
+---
+### SQL reference (user-provided context)
+The following SQL was pasted in **⚙ Chat settings → SQL context**. Treat it as the user's starting point: reuse intent, joins, filters, and identifiers where appropriate — **confirm** tables/columns with `describe_table` / tools before running anything; fix syntax or project qualifiers as needed.
+
+```sql
+SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `prod-ck-abl-data-53.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;
+```",complete,17152,1296,18448,4,2,gpt-4o-mini,32596
+931ddc66-bccc-458a-8c84-4393fee33dca,2026-05-17 23:51:02,"show a bar chart of revenue by vertical
+
+---
+### SQL reference (user-provided context)
+The following SQL was pasted in **⚙ Chat settings → SQL context**. Treat it as the user's starting point: reuse intent, joins, filters, and identifiers where appropriate — **confirm** tables/columns with `describe_table` / tools before running anything; fix syntax or project qualifiers as needed.
+
+```sql
+SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `prod-ck-abl-data-53.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;
+```",complete,32681,2524,35205,7,3,gpt-4o-mini,24922
+8b66a3ee-8125-43d0-8092-61dd6e31df5a,2026-05-17 23:54:01,"Please run query and analyze data and summary and also plot chart for Credit Card revenue for last 12 months . Here is sql QUERY ""SELECT
+vertical                                          AS vertical,
+FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM prod-ck-abl-data-53.dw.fact_tracking_revenue_ext
+WHERE country = 'US'
+AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;""",complete,29495,821,30316,8,6,gpt-4o-mini,37473
+341907f4-fe04-4ba0-affb-17f33284c8ed,2026-05-17 23:55:05,"you definately have access, please try again running query ""SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `prod-ck-abl-data-53.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;""
+
+---
+### SQL reference (user-provided context)
+The following SQL was pasted in **⚙ Chat settings → SQL context**. Treat it as the user's starting point: reuse intent, joins, filters, and identifiers where appropriate — **confirm** tables/columns with `describe_table` / tools before running anything; fix syntax or project qualifiers as needed.
+
+```sql
+SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `prod-ck-abl-data-53.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;
+```",complete,44495,1931,46426,11,7,gpt-4o-mini,23052
+f4327d83-72da-4a4b-a357-793754da84dd,2026-05-17 23:55:52,"show a bar chart of revenue by vertical
+
+---
+### SQL reference (user-provided context)
+The following SQL was pasted in **⚙ Chat settings → SQL context**. Treat it as the user's starting point: reuse intent, joins, filters, and identifiers where appropriate — **confirm** tables/columns with `describe_table` / tools before running anything; fix syntax or project qualifiers as needed.
+
+```sql
+SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `prod-ck-abl-data-53.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;
+```",complete,63990,3302,67292,14,8,gpt-4o-mini,26404
+287a3a4d-0067-4a92-97f1-36c6e9e84988,2026-05-08 01:28:40,list datasets and tables,complete,8755,433,9188,3,1,gpt-4o-mini,18763
+697146a3-9d3c-4051-9eea-9010b6ecfb5c,2026-05-08 01:29:33,"what do you mean no datsets, there are datasets and tables in this project",complete,15590,886,16476,5,1,gpt-4o-mini,15377
+07d09001-7df3-4e28-8a14-a46ed7ce4206,2026-05-08 01:32:42,use this project ck-analytics-orchestration and list datasbets,complete,29461,1823,31284,9,6,gpt-4o-mini,50357
+63e7b76a-635e-4cb1-be30-e88447587726,2026-05-07 19:11:32,list bq datasets lis here,complete,7802,559,8361,3,1,gpt-4o-mini,16293
+32789416-e34c-47a3-beb9-66e003820ee2,2026-05-07 19:15:26,please list tables ai_gateway_dev and analyse that,complete,22382,2203,24585,7,5,gpt-4o-mini,38018
+5aa3cd9c-c4f6-40de-bf1b-b0461c62dc37,2026-05-07 22:50:05,lit bq datasets,complete,7780,555,8335,3,1,gpt-4o-mini,32081
+b87f5cd2-f1d5-44be-ae8a-30ed696e00cb,2026-05-15 17:08:20,Run this exact SQL and tell me the result: SELECT 42 AS the_answer,complete,9090,427,9517,3,1,gpt-4o-mini,18762
+af939faa-d642-488e-9113-cac49ebb8b19,2026-05-15 18:23:58,Run this exact SQL and tell me the result: SELECT 42 AS the_answer,complete,9089,365,9454,3,1,gpt-4o-mini,15895
+cd0cc7f3-cdb7-4412-9d87-ea42885c8aec,2026-05-15 18:24:31,Run this SQL: SELECT COUNT(*) AS n FROM `bigquery-public-data.samples.shakespeare`,complete,13924,802,14726,4,2,gpt-4o-mini,26281
+562b16ab-60bb-43fd-88e9-587ed04d9c2b,2026-05-15 18:25:03,"Run this SQL: SELECT word, word_count FROM `bigquery-public-data.samples.shakespeare` ORDER BY word_count DESC LIMIT 5",complete,14143,1100,15243,4,2,gpt-4o-mini,27363
+ea238a17-5f1e-4a3f-8500-f7a76bde001d,2026-05-15 18:25:43,Run this exact SQL and tell me the result: SELECT 42 AS the_answer,complete,9065,401,9466,3,1,gpt-4o-mini,18751
+c952a106-60f9-4758-bd07-e056efc58206,2026-05-15 18:26:11,Run this SQL: SELECT COUNT(*) AS n FROM `bigquery-public-data.samples.shakespeare`,complete,13877,801,14678,4,2,gpt-4o-mini,22902
+0513cdd6-bf62-4564-b93f-1074f9f22b12,2026-05-15 18:26:52,"Run this SQL: SELECT word, word_count FROM `bigquery-public-data.samples.shakespeare` ORDER BY word_count DESC LIMIT 5",complete,14002,849,14851,4,2,gpt-4o-mini,37398
+86ceac74-22cc-43ef-9f64-d60d9a582b26,2026-05-15 18:54:14,"Run this SQL and tell me the result: SELECT agent_name, COUNT(*) AS runs, ROUND(AVG(duration_ms)/1000, 2) AS avg_secs FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY 1 ORDER BY runs DESC",complete,15079,769,15848,4,2,gpt-4o-mini,27646
+61f9b445-9453-4b3b-be31-fc53ddeedaae,2026-05-15 18:55:18,"Now show me each individual run from the last 30 days. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) ORDER BY ts DESC LIMIT 50",complete,35297,3812,39109,7,3,gpt-4o-mini,57792
+e3dbdc4c-3dec-456d-b992-4518d175789a,2026-05-15 18:55:32,"Looking at the runs you just listed, which session had the longest single run?",error,46219,4020,50239,8,3,gpt-4o-mini,9792
+78f2f3b7-615f-44e7-90be-52d7ab6838bf,2026-05-15 18:55:42,"Confirm by running this SQL: SELECT session_id, MAX(duration_ms) AS longest_ms FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY session_id ORDER BY longest_ms DESC LIMIT 5",error,57420,4104,61524,9,4,gpt-4o-mini,6307
+cb4efe9c-474d-41c3-8d92-92a90af0fef5,2026-05-15 18:55:51,"Compare the longest run you just confirmed against the average from your very first answer. By how many seconds does it exceed the average, and what does that suggest?",error,57420,4104,61524,9,4,gpt-4o-mini,5150
+c58e1dbb-35e6-42d1-8c56-6b5062cecb6e,2026-05-15 18:56:38,"Run this SQL and tell me the result: SELECT agent_name, COUNT(*) AS runs, ROUND(AVG(duration_ms)/1000, 2) AS avg_secs FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY 1 ORDER BY runs DESC",complete,13177,706,13883,4,2,gpt-4o-mini,24282
+fb3f8063-7d4e-47f6-82a5-1dfcb5370aae,2026-05-15 18:57:09,"Now show me each individual run from the last 30 days. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) ORDER BY ts DESC LIMIT 50",complete,22678,1644,24322,7,3,gpt-4o-mini,26750
+def7e0e0-fd35-4ecc-8b41-e7e3fdca1b1d,2026-05-15 18:57:29,"Looking at the runs you just listed, which session had the longest single run?",complete,28650,2304,30954,9,3,gpt-4o-mini,16688
+8aa0d04a-0aa0-41e9-ba32-caa029ba7ba2,2026-05-15 18:58:13,"Confirm by running this SQL: SELECT session_id, MAX(duration_ms) AS longest_ms FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY session_id ORDER BY longest_ms DESC LIMIT 5",complete,65257,2945,68202,20,12,gpt-4o-mini,39918
+d34a30d9-c617-4e0e-8b89-201236644b99,2026-05-15 18:58:31,"Compare the longest run you just confirmed against the average from your very first answer. By how many seconds does it exceed the average, and what does that suggest?",complete,69943,3580,73523,22,12,gpt-4o-mini,14828
+f3b9f39b-504e-4141-b676-fff52ecd544f,2026-04-27 04:29:19,Plese read prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking and summarize data,complete,20733,1210,21943,4,2,gpt-4o-mini,47956
+cc0620a5-fbde-4406-a896-c99f06b92c50,2026-04-27 18:32:12,Analyze prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking and provide summary,complete,22366,1221,23587,4,2,gpt-4o-mini,42993
+7b40529c-c061-4850-bf95-2154e7903cd2,2026-05-16 00:55:16,"Run this SQL: SELECT agent_name, COUNT(*) AS runs,        ROUND(AVG(duration_ms)/1000, 2) AS avg_secs,        ROUND(MAX(duration_ms)/1000, 2) AS max_secs FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY 1 ORDER BY runs DESC",complete,16123,1189,17312,4,2,gpt-4o-mini,31686
+870772f1-dec4-4121-8cc3-84fb1c33fa88,2026-05-16 00:56:24,"Now pull every individual run. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) ORDER BY duration_ms DESC LIMIT 50",complete,39849,4744,44593,7,3,gpt-4o-mini,61280
+02630e74-be1e-4b6b-bc98-f227542c8618,2026-05-16 00:56:37,"Based on the rows above, which session_id had the longest single run and how does its duration compare to the average from your first answer?",error,52575,4938,57513,8,3,gpt-4o-mini,8999
+a4e54de9-d356-4e0b-8f6d-d4e3e6476501,2026-05-16 00:57:07,"Run this SQL: SELECT tool_name, COUNT(*) AS calls,        ROUND(AVG(duration_ms), 1) AS avg_ms FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_tool_invocations` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY 1 ORDER BY calls DESC",error,20499,349,20848,6,5,gpt-4o-mini,25627
+21e9fa3c-5de3-45a4-ba3a-80cc4de161ce,2026-05-16 00:57:18,"Now list every call so I can inspect inputs. Run this SQL: SELECT request_id, tool_name, status, duration_ms,        SUBSTR(tool_args, 1, 100) AS args_preview FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_tool_invocations` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) ORDER BY ts DESC LIMIT 50",error,24533,380,24913,7,6,gpt-4o-mini,6014
+546be0fa-91ef-4120-93dd-91eabfd99c50,2026-05-16 00:57:26,"Which tool dominates by call volume in your first answer, and was that same tool the slowest on average?",error,24533,380,24913,7,6,gpt-4o-mini,4759
+e6b60707-a43b-4f59-abbe-1562f169006a,2026-05-16 00:58:11,"Run this SQL: SELECT agent_name, COUNT(*) AS runs,        ROUND(AVG(duration_ms)/1000, 2) AS avg_secs,        ROUND(MAX(duration_ms)/1000, 2) AS max_secs FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY 1 ORDER BY runs DESC",error,6331,81,6412,2,2,gpt-4o-mini,20351
+ec5365c4-decc-4117-891c-610504fd8e63,2026-05-16 00:58:24,"Now pull every individual run. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) ORDER BY duration_ms DESC LIMIT 50",error,6331,81,6412,2,2,gpt-4o-mini,8593
+8f23a843-e02e-4f3c-b4bf-032fe32642d4,2026-05-16 00:58:31,"Based on the rows above, which session_id had the longest single run and how does its duration compare to the average from your first answer?",error,6331,81,6412,2,2,gpt-4o-mini,3030
+8aa0718c-cdcd-49b5-b6c6-69f0cc23b161,2026-05-16 01:05:16,"Run this SQL: SELECT tool_name, COUNT(*) AS calls,        ROUND(AVG(duration_ms), 1) AS avg_ms FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_tool_invocations` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY 1 ORDER BY calls DESC",complete,16716,882,17598,5,3,gpt-4o-mini,401189
+51627e27-1b02-4e74-8624-87525c4ea4bc,2026-05-16 01:06:48,"Now list every call so I can inspect inputs. Run this SQL: SELECT request_id, tool_name, status, duration_ms,        SUBSTR(tool_args, 1, 100) AS args_preview FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_tool_invocations` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) ORDER BY ts DESC LIMIT 50",complete,41323,1523,42846,11,7,gpt-4o-mini,25031
+80ef7706-40f7-4b14-98f3-4873ef2a5145,2026-05-16 01:07:03,"Which tool dominates by call volume in your first answer, and was that same tool the slowest on average?",complete,48158,2067,50225,13,7,gpt-4o-mini,11139
+805cd606-a104-4730-a77d-e7358c1aa8c6,2026-05-16 05:48:04,"Run this SQL: SELECT agent_name, COUNT(*) AS runs,        ROUND(AVG(duration_ms)/1000, 2) AS avg_secs,        ROUND(MAX(duration_ms)/1000, 2) AS max_secs FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY 1 ORDER BY runs DESC",complete,16069,1184,17253,4,2,gpt-4o-mini,27301
+279eba37-3d08-4b37-8113-c3fc443c5527,2026-05-16 05:49:06,"Now pull every individual run. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) ORDER BY duration_ms DESC LIMIT 50",complete,41480,5170,46650,7,3,gpt-4o-mini,55140
+433d170d-dfa8-4131-96df-ddc276766330,2026-05-16 05:49:19,"Based on the rows above, which session_id had the longest single run and how does its duration compare to the average from your first answer?",error,55254,5347,60601,8,3,gpt-4o-mini,7814
+a78b7552-d2d4-4719-89f8-ff26842f0c2c,2026-05-16 05:49:46,"Run this SQL: SELECT tool_name, COUNT(*) AS calls,        ROUND(AVG(duration_ms), 1) AS avg_ms FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_tool_invocations` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY 1 ORDER BY calls DESC",complete,16695,839,17534,5,3,gpt-4o-mini,23037
+cd120819-a399-4a79-bacb-7ba995653de4,2026-05-16 05:50:09,"Now list every call so I can inspect inputs. Run this SQL: SELECT request_id, tool_name, status, duration_ms,        SUBSTR(tool_args, 1, 100) AS args_preview FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_tool_invocations` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) ORDER BY ts DESC LIMIT 50",complete,33011,1521,34532,9,5,gpt-4o-mini,19216
+66e9f9c8-c1a2-4cbc-8e80-81fd2d855321,2026-05-16 05:50:29,"Which tool dominates by call volume in your first answer, and was that same tool the slowest on average?",complete,41443,2398,43841,11,5,gpt-4o-mini,15291
+4d04d662-3078-4e2c-9320-d5dc14d117de,2026-05-16 05:51:09,"Run this SQL: SELECT agent_name, COUNT(*) AS runs,        ROUND(AVG(duration_ms)/1000, 2) AS avg_secs,        ROUND(MAX(duration_ms)/1000, 2) AS max_secs FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY 1 ORDER BY runs DESC",error,6331,81,6412,2,2,gpt-4o-mini,15639
+bf453cf1-4353-46b4-8510-d97aa1797138,2026-05-16 05:51:17,"Now pull every individual run. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) ORDER BY duration_ms DESC LIMIT 50",error,6331,81,6412,2,2,gpt-4o-mini,3055
+31c21137-7aeb-44a7-9455-4f2baa9fb532,2026-05-16 05:51:26,"Based on the rows above, which session_id had the longest single run and how does its duration compare to the average from your first answer?",error,6331,81,6412,2,2,gpt-4o-mini,4877
+37772da0-caf8-45bd-920c-0976f8186fee,2026-05-16 05:51:58,"Run this SQL: SELECT tool_name, COUNT(*) AS calls,        ROUND(AVG(duration_ms), 1) AS avg_ms FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_tool_invocations` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY 1 ORDER BY calls DESC",complete,21439,681,22120,7,5,gpt-4o-mini,27872
+1332a22d-49ab-438a-af54-3190094e143a,2026-05-16 05:52:18,"Now list every call so I can inspect inputs. Run this SQL: SELECT request_id, tool_name, status, duration_ms,        SUBSTR(tool_args, 1, 100) AS args_preview FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_tool_invocations` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) ORDER BY ts DESC LIMIT 50",complete,31588,1312,32900,10,6,gpt-4o-mini,15676
+1a4c9f1d-4353-42ea-95b1-9eb8c29bcac4,2026-05-16 05:52:40,"Which tool dominates by call volume in your first answer, and was that same tool the slowest on average?",complete,38664,2132,40796,12,6,gpt-4o-mini,17890
+90512643-f108-409d-9419-187a8be388b9,2026-05-16 05:56:17,"Run this SQL: SELECT agent_name, COUNT(*) AS runs,        ROUND(AVG(duration_ms)/1000, 2) AS avg_secs,        ROUND(MAX(duration_ms)/1000, 2) AS max_secs FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY 1 ORDER BY runs DESC",complete,16138,1198,17336,4,2,gpt-4o-mini,26602
+19ed1eab-7353-4fea-96e9-ba102266736c,2026-05-16 05:57:19,"Now pull every individual run. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) ORDER BY duration_ms DESC LIMIT 50",complete,41592,5183,46775,7,3,gpt-4o-mini,56621
+36d0e603-06ca-42f7-b377-62746c84db5b,2026-05-16 05:57:34,"Based on the rows above, which session_id had the longest single run and how does its duration compare to the average from your first answer?",error,55382,5359,60741,8,3,gpt-4o-mini,9152
+a3958cfe-b09f-4163-8520-0b90c7ed5c50,2026-05-16 05:58:06,"Run this SQL: SELECT tool_name, COUNT(*) AS calls,        ROUND(AVG(duration_ms), 1) AS avg_ms FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_tool_invocations` WHERE ts > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY) GROUP BY 1 ORDER BY calls DESC",complete,14769,1105,15874,4,2,gpt-4o-mini,27414
+84fd040e-b176-4444-bebe-b4fc96274f8d,2026-05-16 06:00:45,List BQ databsets,complete,9218,650,9868,3,1,gpt-4o-mini,18678
+2b3cd4da-6a02-4c2f-a220-ed18f22167ef,2026-05-16 06:01:47,lets use ai_gateway_dev datasets and try to run query on tables,complete,20881,1276,22157,6,2,gpt-4o-mini,16871
+2031181e-7dad-46f1-ad02-41d113f1e1d7,2026-05-16 06:11:19,"please run query WITH daily_stats AS (
+  SELECT
+    agent_name,
+    DATE(ts)                                    AS day,
+    COUNT(*)                                    AS total_jobs,
+    COUNTIF(status = 'SUCCESS')               AS successful_jobs,
+    APPROX_QUANTILES(duration_ms, 100)[OFFSET(50)]  AS p50_ms,
+    APPROX_QUANTILES(duration_ms, 100)[OFFSET(95)]  AS p95_ms,
+    APPROX_QUANTILES(duration_ms, 100)[OFFSET(99)]  AS p99_ms,
+    AVG(duration_ms)                            AS avg_ms
+  FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking`
+  WHERE ts >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY)
+    AND duration_ms IS NOT NULL
+  GROUP BY 1, 2
+),
+
+rolling AS (
+  SELECT
+    *,
+    AVG(successful_jobs * 1.0 / total_jobs) OVER (
+      PARTITION BY agent_name
+      ORDER BY day
+      ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    )                                           AS rolling_7d_success_rate,
+    AVG(p50_ms) OVER (
+      PARTITION BY agent_name
+      ORDER BY day
+      ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    )                                           AS rolling_7d_p50_ms
+  FROM daily_stats
+),
+
+agent_summary AS (
+  SELECT
+    agent_name,
+    SUM(total_jobs)                                       AS total_jobs,
+    SAFE_DIVIDE(SUM(successful_jobs), SUM(total_jobs))   AS overall_success_rate,
+    AVG(p50_ms)                                           AS avg_p50_ms,
+    MAX(p99_ms)                                           AS worst_p99_ms,
+    AVG(rolling_7d_success_rate)                          AS avg_rolling_success
+  FROM rolling
+  GROUP BY agent_name
+)
+
+SELECT
+  RANK() OVER (ORDER BY overall_success_rate DESC, avg_p50_ms ASC) AS rank,
+  agent_name,
+  total_jobs,
+  ROUND(overall_success_rate * 100, 2)    AS success_pct,
+  ROUND(avg_p50_ms)                         AS avg_p50_ms,
+  ROUND(worst_p99_ms)                       AS worst_p99_ms,
+  ROUND(avg_rolling_success * 100, 2)     AS rolling_7d_success_pct
+FROM agent_summary
+ORDER BY rank
+LIMIT 20;",error,7153,81,7234,2,2,gpt-4o-mini,15868
+52595bd7-f00e-4e93-ba7e-a4df566c7a1a,2026-05-16 06:15:40,"please run this qury and analyze data ""WITH daily_stats AS (
+  SELECT
+    agent_name,
+    DATE(ts)                                    AS day,
+    COUNT(*)                                    AS total_jobs,
+    COUNTIF(status = 'SUCCESS')               AS successful_jobs,
+    APPROX_QUANTILES(duration_ms, 100)[OFFSET(50)]  AS p50_ms,
+    APPROX_QUANTILES(duration_ms, 100)[OFFSET(95)]  AS p95_ms,
+    APPROX_QUANTILES(duration_ms, 100)[OFFSET(99)]  AS p99_ms,
+    AVG(duration_ms)                            AS avg_ms
+  FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking`
+  WHERE ts >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY)
+    AND duration_ms IS NOT NULL
+  GROUP BY 1, 2
+),
+
+rolling AS (
+  SELECT
+    *,
+    AVG(successful_jobs * 1.0 / total_jobs) OVER (
+      PARTITION BY agent_name
+      ORDER BY day
+      ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    )                                           AS rolling_7d_success_rate,
+    AVG(p50_ms) OVER (
+      PARTITION BY agent_name
+      ORDER BY day
+      ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    )                                           AS rolling_7d_p50_ms
+  FROM daily_stats
+),
+
+agent_summary AS (
+  SELECT
+    agent_name,
+    SUM(total_jobs)                                       AS total_jobs,
+    SAFE_DIVIDE(SUM(successful_jobs), SUM(total_jobs))   AS overall_success_rate,
+    AVG(p50_ms)                                           AS avg_p50_ms,
+    MAX(p99_ms)                                           AS worst_p99_ms,
+    AVG(rolling_7d_success_rate)                          AS avg_rolling_success
+  FROM rolling
+  GROUP BY agent_name
+)
+
+SELECT
+  RANK() OVER (ORDER BY overall_success_rate DESC, avg_p50_ms ASC) AS rank,
+  agent_name,
+  total_jobs,
+  ROUND(overall_success_rate * 100, 2)    AS success_pct,
+  ROUND(avg_p50_ms)                         AS avg_p50_ms,
+  ROUND(worst_p99_ms)                       AS worst_p99_ms,
+  ROUND(avg_rolling_success * 100, 2)     AS rolling_7d_success_pct
+FROM agent_summary
+ORDER BY rank
+LIMIT 20;""",error,7167,81,7248,2,2,gpt-4o-mini,14416
+9c0d8b1d-980c-4c58-a31a-9ff7795045ef,2026-05-16 06:20:00,"please run query and analyze result and share me data ""WITH daily_stats AS (
+  SELECT
+    agent_name,
+    DATE(ts)                                    AS day,
+    COUNT(*)                                    AS total_jobs,
+    COUNTIF(status = 'SUCCESS')               AS successful_jobs,
+    APPROX_QUANTILES(duration_ms, 100)[OFFSET(50)]  AS p50_ms,
+    APPROX_QUANTILES(duration_ms, 100)[OFFSET(95)]  AS p95_ms,
+    APPROX_QUANTILES(duration_ms, 100)[OFFSET(99)]  AS p99_ms,
+    AVG(duration_ms)                            AS avg_ms
+  FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking`
+  WHERE ts >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY)
+    AND duration_ms IS NOT NULL
+  GROUP BY 1, 2
+),
+
+rolling AS (
+  SELECT
+    *,
+    AVG(successful_jobs * 1.0 / total_jobs) OVER (
+      PARTITION BY agent_name
+      ORDER BY day
+      ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    )                                           AS rolling_7d_success_rate,
+    AVG(p50_ms) OVER (
+      PARTITION BY agent_name
+      ORDER BY day
+      ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    )                                           AS rolling_7d_p50_ms
+  FROM daily_stats
+),
+
+agent_summary AS (
+  SELECT
+    agent_name,
+    SUM(total_jobs)                                       AS total_jobs,
+    SAFE_DIVIDE(SUM(successful_jobs), SUM(total_jobs))   AS overall_success_rate,
+    AVG(p50_ms)                                           AS avg_p50_ms,
+    MAX(p99_ms)                                           AS worst_p99_ms,
+    AVG(rolling_7d_success_rate)                          AS avg_rolling_success
+  FROM rolling
+  GROUP BY agent_name
+)
+
+SELECT
+  RANK() OVER (ORDER BY overall_success_rate DESC, avg_p50_ms ASC) AS rank,
+  agent_name,
+  total_jobs,
+  ROUND(overall_success_rate * 100, 2)    AS success_pct,
+  ROUND(avg_p50_ms)                         AS avg_p50_ms,
+  ROUND(worst_p99_ms)                       AS worst_p99_ms,
+  ROUND(avg_rolling_success * 100, 2)     AS rolling_7d_success_pct
+FROM agent_summary
+ORDER BY rank
+LIMIT 20;""",complete,16725,1541,18266,4,2,gpt-4o-mini,34652
+9083743c-cfa0-435d-aa02-d20ecc0ca882,2026-05-16 06:24:49,"try runnung this query ""SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `modular-shard-92519.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;""",complete,31618,2484,34102,7,3,gpt-4o-mini,20888
+760e1aa1-7af3-4200-964c-f498b69ce864,2026-05-16 06:26:25,"please ry this query ""SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `prod-ck-abl-data-53.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;""",complete,49538,3827,53365,10,4,gpt-4o-mini,27147
+648c8309-9600-4dcf-9465-e676806d6001,2026-05-16 06:27:32,just foucs on last 1 month of data,complete,70342,5113,75455,13,5,gpt-4o-mini,24441
+81266852-c75d-49c7-9dd2-bc2c8cc69f75,2026-05-16 06:29:03,"only credit card sector, analyzby weekly data framew, and visulaize",complete,90637,6459,97096,16,6,gpt-4o-mini,27608
+c8ac47e2-c3a3-4933-8e23-aee3b804836b,2026-05-16 15:53:07,"please run query ""SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financedate)) AS finance_month,
+    COALESCE(SUM(isApplication), 0)                  AS sum_applications,
+    COALESCE(SUM(isconversion),  0)                  AS sum_conversions,
+    COALESCE(SUM(amount),        0)                  AS sum_revenue
+FROM `prod-ck-abl-data-53.dw.fact_tracking_revenue_ext`
+WHERE country = 'US'
+  AND TIMESTAMP(financedate) >= TIMESTAMP(DATE_TRUNC(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), MONTH))
+  AND TIMESTAMP(financedate) <  TIMESTAMP(DATE_TRUNC(DATE_ADD(DATE_SUB(CURRENT_DATE('America/Los_Angeles'), INTERVAL 23 MONTH), INTERVAL 24 MONTH), MONTH))
+  AND (vertical <> '(null)' OR vertical IS NULL)
+GROUP BY 1, 2
+LIMIT 30000;"" and analyze data",complete,11001,822,11823,3,1,gpt-4o-mini,22487
+3bcad9f8-e37a-403f-8fd4-7b8c1e6f09d9,2026-05-16 16:30:48,No check last 7 days of data,error,20814,1543,22357,5,2,gpt-4o-mini,2229380
+4a812d65-b18b-49d4-8299-677cfbff2bd6,2026-05-01 00:19:20,What datasets are available?,complete,28030,3357,31387,3,1,gpt-4o-mini,76373
+a5f10c56-08b7-463b-b860-3967f3bbdc5e,2026-05-01 02:05:34,Say hello in one sentence only.,complete,4818,98,4916,2,,gpt-4o-mini,7955
+3db981c6-2790-4660-ab1c-1be43fac4406,2026-05-01 02:06:21,Say hello in one sentence only.,complete,4818,108,4926,2,,gpt-4o-mini,8457
+7dbe5875-a09a-4f90-b6e9-0e33b3b23321,2026-05-01 02:09:30,What datasets are available?,complete,32219,3359,35578,3,1,gpt-4o-mini,91025
+56033b5f-b01e-4a71-9483-d72c9fd78013,2026-05-01 19:53:04,Reply in one sentence: name one BigQuery safety theme from your instructions.,complete,15151,177,15328,2,,gpt-4o-mini,11777
+342926ff-35c2-40af-8019-f95997a14138,2026-05-01 19:55:36,What datasets are available?,complete,47652,3337,50989,3,1,gpt-4o-mini,101607
+16cf82df-4c00-4983-9598-7ff836f14ded,2026-05-01 22:52:53,list dataset,complete,7787,600,8387,3,1,gpt-4o-mini,17375

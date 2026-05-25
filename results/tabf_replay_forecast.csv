@@ -1,0 +1,109 @@
+request_id,task_text,actual_total,actual_input,actual_output,actual_llm_calls,actual_tool_calls,pred_heuristic,pred_gbt,static_baseline
+d4daf8aa-e6d1-418d-948e-f790883cfca7,"Re-run that ""Credit Card sector, weekly, visualize"" query in the UI",28379,26653,1726,6,3.0,7700,10322,10169
+8ccbfe3d-abb2-4edb-8f41-744d4bcb4a94,"Please run query ""SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financed",25241,24523,718,7,5.0,14061,17736,10169
+8e7ab74c-0a99-4bcb-9100-d36d77b09699,What specific marketing strategies were in place during the months with the highest application rates?,33023,31539,1484,9,5.0,5330,6616,10169
+9e0130a1-4c6e-4476-8131-e8dc663084fc,could you please share me some data and,68013,65026,2987,15,9.0,5330,6710,10169
+167058c5-efb6-4748-81c4-61b8b0949938,"please run query and analyze results ""bq query --use_legacy_sql=false --project_id=ck-analytics-orchestration \
+  'SELECT request_id, sessio",26681,25852,829,8,6.0,8068,10024,10169
+f3a4efa6-2905-4321-963f-9fb63b50a0ba,Please show me last 12 months credit card vertical data,38341,37022,1319,9,7.0,5330,6697,10169
+1e7d8d6c-053b-4c48-91f7-ea9919c1336a,"you may use this query ""SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(fi",57035,54804,2231,12,8.0,14138,17735,10169
+071c868e-1187-4dff-97d1-452f6cf67b11,"Please run query and analyze data and summary and also plot chart for Credit Card revenue for last 12 months . Here is sql QUERY ""SELECT
+   ",18448,17152,1296,4,2.0,21667,17735,10169
+931ddc66-bccc-458a-8c84-4393fee33dca,show a bar chart of revenue by vertical,35205,32681,2524,7,3.0,5330,6710,10169
+8b66a3ee-8125-43d0-8092-61dd6e31df5a,"Please run query and analyze data and summary and also plot chart for Credit Card revenue for last 12 months . Here is sql QUERY ""SELECT
+ver",30316,29495,821,8,6.0,21667,17735,10169
+341907f4-fe04-4ba0-affb-17f33284c8ed,"you definately have access, please try again running query ""SELECT
+    vertical                                          AS vertical,
+    FO",46426,44495,1931,11,7.0,14061,17736,10169
+f4327d83-72da-4a4b-a357-793754da84dd,show a bar chart of revenue by vertical,67292,63990,3302,14,8.0,5330,6710,10169
+287a3a4d-0067-4a92-97f1-36c6e9e84988,list datasets and tables,9188,8755,433,3,1.0,5330,6710,10169
+697146a3-9d3c-4051-9eea-9010b6ecfb5c,"what do you mean no datsets, there are datasets and tables in this project",16476,15590,886,5,1.0,5330,6557,10169
+07d09001-7df3-4e28-8a14-a46ed7ce4206,use this project ck-analytics-orchestration and list datasbets,31284,29461,1823,9,6.0,5330,6710,10169
+63e7b76a-635e-4cb1-be30-e88447587726,list bq datasets lis here,8361,7802,559,3,1.0,5330,6710,10169
+32789416-e34c-47a3-beb9-66e003820ee2,please list tables ai_gateway_dev and analyse that,24585,22382,2203,7,5.0,5330,6710,10169
+5aa3cd9c-c4f6-40de-bf1b-b0461c62dc37,lit bq datasets,8335,7780,555,3,1.0,5330,6710,10169
+b87f5cd2-f1d5-44be-ae8a-30ed696e00cb,Run this exact SQL and tell me the result: SELECT 42 AS the_answer,9517,9090,427,3,1.0,5005,6819,10169
+af939faa-d642-488e-9113-cac49ebb8b19,Run this exact SQL and tell me the result: SELECT 42 AS the_answer,9454,9089,365,3,1.0,5005,6819,10169
+cd0cc7f3-cdb7-4412-9d87-ea42885c8aec,Run this SQL: SELECT COUNT(*) AS n FROM `bigquery-public-data.samples.shakespeare`,14726,13924,802,4,2.0,5005,7047,10169
+562b16ab-60bb-43fd-88e9-587ed04d9c2b,"Run this SQL: SELECT word, word_count FROM `bigquery-public-data.samples.shakespeare` ORDER BY word_count DESC LIMIT 5",15243,14143,1100,4,2.0,5005,6860,10169
+ea238a17-5f1e-4a3f-8500-f7a76bde001d,Run this exact SQL and tell me the result: SELECT 42 AS the_answer,9466,9065,401,3,1.0,5005,6819,10169
+c952a106-60f9-4758-bd07-e056efc58206,Run this SQL: SELECT COUNT(*) AS n FROM `bigquery-public-data.samples.shakespeare`,14678,13877,801,4,2.0,5005,7047,10169
+0513cdd6-bf62-4564-b93f-1074f9f22b12,"Run this SQL: SELECT word, word_count FROM `bigquery-public-data.samples.shakespeare` ORDER BY word_count DESC LIMIT 5",14851,14002,849,4,2.0,5005,6860,10169
+86ceac74-22cc-43ef-9f64-d60d9a582b26,"Run this SQL and tell me the result: SELECT agent_name, COUNT(*) AS runs, ROUND(AVG(duration_ms)/1000, 2) AS avg_secs FROM `prod-ck-analytic",15848,15079,769,4,2.0,7988,10023,10169
+61f9b445-9453-4b3b-be31-fc53ddeedaae,"Now show me each individual run from the last 30 days. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod",39109,35297,3812,7,3.0,12755,17307,10169
+e3dbdc4c-3dec-456d-b992-4518d175789a,"Looking at the runs you just listed, which session had the longest single run?",50239,46219,4020,8,3.0,7700,10676,10169
+78f2f3b7-615f-44e7-90be-52d7ab6838bf,"Confirm by running this SQL: SELECT session_id, MAX(duration_ms) AS longest_ms FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.age",61524,57420,4104,9,4.0,7876,9951,10169
+cb4efe9c-474d-41c3-8d92-92a90af0fef5,"Compare the longest run you just confirmed against the average from your very first answer. By how many seconds does it exceed the average, ",61524,57420,4104,9,4.0,12550,19416,10169
+c58e1dbb-35e6-42d1-8c56-6b5062cecb6e,"Run this SQL and tell me the result: SELECT agent_name, COUNT(*) AS runs, ROUND(AVG(duration_ms)/1000, 2) AS avg_secs FROM `prod-ck-analytic",13883,13177,706,4,2.0,7988,10023,10169
+fb3f8063-7d4e-47f6-82a5-1dfcb5370aae,"Now show me each individual run from the last 30 days. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod",24322,22678,1644,7,3.0,12755,17307,10169
+def7e0e0-fd35-4ecc-8b41-e7e3fdca1b1d,"Looking at the runs you just listed, which session had the longest single run?",30954,28650,2304,9,3.0,7700,10676,10169
+8aa0d04a-0aa0-41e9-ba32-caa029ba7ba2,"Confirm by running this SQL: SELECT session_id, MAX(duration_ms) AS longest_ms FROM `prod-ck-analytics-data-99.genai_agent_eval_tracking.age",68202,65257,2945,20,12.0,7876,9951,10169
+d34a30d9-c617-4e0e-8b89-201236644b99,"Compare the longest run you just confirmed against the average from your very first answer. By how many seconds does it exceed the average, ",73523,69943,3580,22,12.0,12550,19416,10169
+f3b9f39b-504e-4141-b676-fff52ecd544f,Plese read prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking and summarize data,21943,20733,1210,4,2.0,5330,6710,10169
+cc0620a5-fbde-4406-a896-c99f06b92c50,Analyze prod-ck-analytics-data-99.genai_agent_eval_tracking.agent_job_tracking and provide summary,23587,22366,1221,4,2.0,5330,6710,10169
+7b40529c-c061-4850-bf95-2154e7903cd2,"Run this SQL: SELECT agent_name, COUNT(*) AS runs,        ROUND(AVG(duration_ms)/1000, 2) AS avg_secs,        ROUND(MAX(duration_ms)/1000, 2",17312,16123,1189,4,2.0,8020,10023,10169
+870772f1-dec4-4121-8cc3-84fb1c33fa88,"Now pull every individual run. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod-ck-analytics-data-99.ge",44593,39849,4744,7,3.0,7876,10027,10169
+02630e74-be1e-4b6b-bc98-f227542c8618,"Based on the rows above, which session_id had the longest single run and how does its duration compare to the average from your first answer",57513,52575,4938,8,3.0,12448,18980,10169
+a4e54de9-d356-4e0b-8f6d-d4e3e6476501,"Run this SQL: SELECT tool_name, COUNT(*) AS calls,        ROUND(AVG(duration_ms), 1) AS avg_ms FROM `prod-ck-analytics-data-99.genai_agent_e",20848,20499,349,6,5.0,7892,9990,10169
+21e9fa3c-5de3-45a4-ba3a-80cc4de161ce,"Now list every call so I can inspect inputs. Run this SQL: SELECT request_id, tool_name, status, duration_ms,        SUBSTR(tool_args, 1, 10",24913,24533,380,7,6.0,12832,17339,10169
+546be0fa-91ef-4120-93dd-91eabfd99c50,"Which tool dominates by call volume in your first answer, and was that same tool the slowest on average?",24913,24533,380,7,6.0,7700,10349,10169
+e6b60707-a43b-4f59-abbe-1562f169006a,"Run this SQL: SELECT agent_name, COUNT(*) AS runs,        ROUND(AVG(duration_ms)/1000, 2) AS avg_secs,        ROUND(MAX(duration_ms)/1000, 2",6412,6331,81,2,2.0,8020,10023,10169
+ec5365c4-decc-4117-891c-610504fd8e63,"Now pull every individual run. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod-ck-analytics-data-99.ge",6412,6331,81,2,2.0,7876,10027,10169
+8f23a843-e02e-4f3c-b4bf-032fe32642d4,"Based on the rows above, which session_id had the longest single run and how does its duration compare to the average from your first answer",6412,6331,81,2,2.0,12448,18980,10169
+8aa0718c-cdcd-49b5-b6c6-69f0cc23b161,"Run this SQL: SELECT tool_name, COUNT(*) AS calls,        ROUND(AVG(duration_ms), 1) AS avg_ms FROM `prod-ck-analytics-data-99.genai_agent_e",17598,16716,882,5,3.0,7892,9990,10169
+51627e27-1b02-4e74-8624-87525c4ea4bc,"Now list every call so I can inspect inputs. Run this SQL: SELECT request_id, tool_name, status, duration_ms,        SUBSTR(tool_args, 1, 10",42846,41323,1523,11,7.0,12832,17339,10169
+80ef7706-40f7-4b14-98f3-4873ef2a5145,"Which tool dominates by call volume in your first answer, and was that same tool the slowest on average?",50225,48158,2067,13,7.0,7700,10349,10169
+805cd606-a104-4730-a77d-e7358c1aa8c6,"Run this SQL: SELECT agent_name, COUNT(*) AS runs,        ROUND(AVG(duration_ms)/1000, 2) AS avg_secs,        ROUND(MAX(duration_ms)/1000, 2",17253,16069,1184,4,2.0,8020,10023,10169
+279eba37-3d08-4b37-8113-c3fc443c5527,"Now pull every individual run. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod-ck-analytics-data-99.ge",46650,41480,5170,7,3.0,7876,10027,10169
+433d170d-dfa8-4131-96df-ddc276766330,"Based on the rows above, which session_id had the longest single run and how does its duration compare to the average from your first answer",60601,55254,5347,8,3.0,12448,18980,10169
+a78b7552-d2d4-4719-89f8-ff26842f0c2c,"Run this SQL: SELECT tool_name, COUNT(*) AS calls,        ROUND(AVG(duration_ms), 1) AS avg_ms FROM `prod-ck-analytics-data-99.genai_agent_e",17534,16695,839,5,3.0,7892,9990,10169
+cd120819-a399-4a79-bacb-7ba995653de4,"Now list every call so I can inspect inputs. Run this SQL: SELECT request_id, tool_name, status, duration_ms,        SUBSTR(tool_args, 1, 10",34532,33011,1521,9,5.0,12832,17339,10169
+66e9f9c8-c1a2-4cbc-8e80-81fd2d855321,"Which tool dominates by call volume in your first answer, and was that same tool the slowest on average?",43841,41443,2398,11,5.0,7700,10349,10169
+4d04d662-3078-4e2c-9320-d5dc14d117de,"Run this SQL: SELECT agent_name, COUNT(*) AS runs,        ROUND(AVG(duration_ms)/1000, 2) AS avg_secs,        ROUND(MAX(duration_ms)/1000, 2",6412,6331,81,2,2.0,8020,10023,10169
+bf453cf1-4353-46b4-8510-d97aa1797138,"Now pull every individual run. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod-ck-analytics-data-99.ge",6412,6331,81,2,2.0,7876,10027,10169
+31c21137-7aeb-44a7-9455-4f2baa9fb532,"Based on the rows above, which session_id had the longest single run and how does its duration compare to the average from your first answer",6412,6331,81,2,2.0,12448,18980,10169
+37772da0-caf8-45bd-920c-0976f8186fee,"Run this SQL: SELECT tool_name, COUNT(*) AS calls,        ROUND(AVG(duration_ms), 1) AS avg_ms FROM `prod-ck-analytics-data-99.genai_agent_e",22120,21439,681,7,5.0,7892,9990,10169
+1332a22d-49ab-438a-af54-3190094e143a,"Now list every call so I can inspect inputs. Run this SQL: SELECT request_id, tool_name, status, duration_ms,        SUBSTR(tool_args, 1, 10",32900,31588,1312,10,6.0,12832,17339,10169
+1a4c9f1d-4353-42ea-95b1-9eb8c29bcac4,"Which tool dominates by call volume in your first answer, and was that same tool the slowest on average?",40796,38664,2132,12,6.0,7700,10349,10169
+90512643-f108-409d-9419-187a8be388b9,"Run this SQL: SELECT agent_name, COUNT(*) AS runs,        ROUND(AVG(duration_ms)/1000, 2) AS avg_secs,        ROUND(MAX(duration_ms)/1000, 2",17336,16138,1198,4,2.0,8020,10023,10169
+19ed1eab-7353-4fea-96e9-ba102266736c,"Now pull every individual run. Run this SQL: SELECT request_id, session_id, status, duration_ms, model_id FROM `prod-ck-analytics-data-99.ge",46775,41592,5183,7,3.0,7876,10027,10169
+36d0e603-06ca-42f7-b377-62746c84db5b,"Based on the rows above, which session_id had the longest single run and how does its duration compare to the average from your first answer",60741,55382,5359,8,3.0,12448,18980,10169
+a3958cfe-b09f-4163-8520-0b90c7ed5c50,"Run this SQL: SELECT tool_name, COUNT(*) AS calls,        ROUND(AVG(duration_ms), 1) AS avg_ms FROM `prod-ck-analytics-data-99.genai_agent_e",15874,14769,1105,4,2.0,7892,9990,10169
+84fd040e-b176-4444-bebe-b4fc96274f8d,List BQ databsets,9868,9218,650,3,1.0,5330,6710,10169
+2b3cd4da-6a02-4c2f-a220-ed18f22167ef,lets use ai_gateway_dev datasets and try to run query on tables,22157,20881,1276,6,2.0,5005,7047,10169
+2031181e-7dad-46f1-ad02-41d113f1e1d7,"please run query WITH daily_stats AS (
+  SELECT
+    agent_name,
+    DATE(ts)                                    AS day,
+    COUNT(*)        ",7234,7153,81,2,2.0,16442,17299,10169
+52595bd7-f00e-4e93-ba7e-a4df566c7a1a,"please run this qury and analyze data ""WITH daily_stats AS (
+  SELECT
+    agent_name,
+    DATE(ts)                                    AS day",7248,7167,81,2,2.0,16544,17299,10169
+9c0d8b1d-980c-4c58-a31a-9ff7795045ef,"please run query and analyze result and share me data ""WITH daily_stats AS (
+  SELECT
+    agent_name,
+    DATE(ts)                          ",18266,16725,1541,4,2.0,16621,17298,10169
+9083743c-cfa0-435d-aa02-d20ecc0ca882,"try runnung this query ""SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(fi",34102,31618,2484,7,3.0,13933,17734,10169
+760e1aa1-7af3-4200-964c-f498b69ce864,"please ry this query ""SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(fina",53365,49538,3827,10,4.0,13933,17734,10169
+648c8309-9600-4dcf-9465-e676806d6001,just foucs on last 1 month of data,75455,70342,5113,13,5.0,5330,6710,10169
+81266852-c75d-49c7-9dd2-bc2c8cc69f75,"only credit card sector, analyzby weekly data framew, and visulaize",97096,90637,6459,16,6.0,5330,6697,10169
+c8ac47e2-c3a3-4933-8e23-aee3b804836b,"please run query ""SELECT
+    vertical                                          AS vertical,
+    FORMAT_TIMESTAMP('%Y-%m', TIMESTAMP(financed",11823,11001,822,3,1.0,13984,17734,10169
+3bcad9f8-e37a-403f-8fd4-7b8c1e6f09d9,No check last 7 days of data,22357,20814,1543,5,2.0,5330,6710,10169
+4a812d65-b18b-49d4-8299-677cfbff2bd6,What datasets are available?,31387,28030,3357,3,1.0,5330,6761,10169
+a5f10c56-08b7-463b-b860-3967f3bbdc5e,Say hello in one sentence only.,4916,4818,98,2,,5330,6710,10169
+3db981c6-2790-4660-ab1c-1be43fac4406,Say hello in one sentence only.,4926,4818,108,2,,5330,6710,10169
+7dbe5875-a09a-4f90-b6e9-0e33b3b23321,What datasets are available?,35578,32219,3359,3,1.0,5330,6761,10169
+56033b5f-b01e-4a71-9483-d72c9fd78013,Reply in one sentence: name one BigQuery safety theme from your instructions.,15328,15151,177,2,,7700,10064,10169
+342926ff-35c2-40af-8019-f95997a14138,What datasets are available?,50989,47652,3337,3,1.0,5330,6761,10169
+16cf82df-4c00-4983-9598-7ff836f14ded,list dataset,8387,7787,600,3,1.0,5330,6710,10169

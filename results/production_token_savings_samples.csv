@@ -1,0 +1,5 @@
+preset,outcome,before_tokens,after_tokens,saved_tokens,ratio,tool_msgs_compressed,cost_saved_usd_gpt4o
+balanced,saved,14073,3182,10891,0.23,1,0.001634
+balanced,saved,16380,3448,12932,0.21,1,0.001940
+balanced,saved,25595,7119,18476,0.28,1,0.002771
+balanced,no_op,2791,2791,0,1.00,0,0.000000

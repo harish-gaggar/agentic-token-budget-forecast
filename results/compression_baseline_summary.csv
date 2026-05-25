@@ -1,0 +1,5 @@
+persona,truncate_reduction_pct,ctxopt_reduction_pct
+react_web_search,42.2,47.2
+code_fix,3.5,91.5
+multi_turn_research,92.9,62.1
+polling_agent,0.0,68.9

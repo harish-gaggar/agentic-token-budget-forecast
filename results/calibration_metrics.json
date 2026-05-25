@@ -1,0 +1,109 @@
+{
+  "n_train": 415,
+  "n_test": 185,
+  "interval": {
+    "lo_q": 0.1,
+    "hi_q": 0.9,
+    "nominal_coverage_pct": 80,
+    "empirical_coverage_pct": 75.14
+  },
+  "expected_calibration_error": 0.1393,
+  "reliability_bins": [
+    {
+      "bin": 0,
+      "conf_lo": 0.42799831688053586,
+      "conf_hi": 0.4731948715678829,
+      "n": 15,
+      "mean_conf": 0.4434981130356662,
+      "w20r": 66.66666666666666
+    },
+    {
+      "bin": 1,
+      "conf_lo": 0.4731948715678829,
+      "conf_hi": 0.5183914262552299,
+      "n": 3,
+      "mean_conf": 0.5092038126164953,
+      "w20r": 100.0
+    },
+    {
+      "bin": 2,
+      "conf_lo": 0.5183914262552299,
+      "conf_hi": 0.563587980942577,
+      "n": 45,
+      "mean_conf": 0.5392608260587135,
+      "w20r": 80.0
+    },
+    {
+      "bin": 3,
+      "conf_lo": 0.563587980942577,
+      "conf_hi": 0.6087845356299241,
+      "n": 45,
+      "mean_conf": 0.5910419881943261,
+      "w20r": 64.44444444444444
+    },
+    {
+      "bin": 4,
+      "conf_lo": 0.6087845356299241,
+      "conf_hi": 0.6539810903172711,
+      "n": 17,
+      "mean_conf": 0.629388793994503,
+      "w20r": 70.58823529411765
+    },
+    {
+      "bin": 5,
+      "conf_lo": 0.6539810903172711,
+      "conf_hi": 0.6991776450046181,
+      "n": 13,
+      "mean_conf": 0.6715097099929673,
+      "w20r": 84.61538461538461
+    },
+    {
+      "bin": 6,
+      "conf_lo": 0.6991776450046181,
+      "conf_hi": 0.7443741996919653,
+      "n": 22,
+      "mean_conf": 0.7157004882556959,
+      "w20r": 77.27272727272727
+    },
+    {
+      "bin": 7,
+      "conf_lo": 0.7443741996919653,
+      "conf_hi": 0.7895707543793122,
+      "n": 15,
+      "mean_conf": 0.7609075813721639,
+      "w20r": 80.0
+    },
+    {
+      "bin": 8,
+      "conf_lo": 0.7895707543793122,
+      "conf_hi": 0.8347673090666594,
+      "n": 5,
+      "mean_conf": 0.808459406102425,
+      "w20r": 80.0
+    },
+    {
+      "bin": 9,
+      "conf_lo": 0.8347673090666594,
+      "conf_hi": 0.8799638637540064,
+      "n": 5,
+      "mean_conf": 0.8733273375634669,
+      "w20r": 60.0
+    }
+  ],
+  "coverage_table": [
+    {
+      "nominal_level": 50,
+      "empirical_coverage_pct": 50.27
+    },
+    {
+      "nominal_level": 80,
+      "empirical_coverage_pct": 75.14
+    },
+    {
+      "nominal_level": 90,
+      "empirical_coverage_pct": 87.03
+    }
+  ],
+  "method": "quantile_gbt",
+  "notes": "Confidence = exp(-(interval_width / point_pred)). 10 equal-width bins on [min(conf), max(conf)]. ECE is mean |mean_conf - empirical_W20R| weighted by bin occupancy."
+}

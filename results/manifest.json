@@ -1,0 +1,205 @@
+{
+  "n_corpus": 600,
+  "n_train": 415,
+  "n_test": 185,
+  "corpus_seed": 1729,
+  "sim_seed": 20260514,
+  "main": {
+    "B1_uniform": {
+      "mae": 4497.021621621621,
+      "mape": 50.194416827183595,
+      "w20r": 28.10810810810811
+    },
+    "B2_type_only": {
+      "mae": 4839.135135135135,
+      "mape": 36.23272751172523,
+      "w20r": 30.270270270270274
+    },
+    "B3_length": {
+      "mae": 3981.8054054054055,
+      "mape": 38.4040499995571,
+      "w20r": 34.054054054054056
+    },
+    "B4_ridge_hand": {
+      "mae": 2288.562162162162,
+      "mape": 21.681259409301248,
+      "w20r": 55.67567567567567
+    },
+    "B5_rf_hand": {
+      "mae": 1883.2486486486487,
+      "mape": 15.899796770905217,
+      "w20r": 74.05405405405405
+    },
+    "B6_histgb_hand": {
+      "mae": 1876.6702702702703,
+      "mape": 15.874749872541278,
+      "w20r": 73.51351351351352
+    },
+    "B7_ridge_tfidf": {
+      "mae": 1889.945945945946,
+      "mape": 17.25710613067142,
+      "w20r": 64.32432432432432
+    },
+    "B8_histgb_tfidf": {
+      "mae": 2036.5189189189189,
+      "mape": 17.486300629753703,
+      "w20r": 69.72972972972973
+    },
+    "TABF_heuristic": {
+      "mae": 2502.508108108108,
+      "mape": 18.17523859023355,
+      "w20r": 65.4054054054054
+    },
+    "TABF_gbt": {
+      "mae": 1882.0702702702702,
+      "mape": 15.901109146551487,
+      "w20r": 74.05405405405405
+    }
+  },
+  "significance": {
+    "B1_uniform": 1.0984371144539348e-17,
+    "B2_type_only": 1.6977475366916752e-17,
+    "B3_length": 1.312981552203585e-14,
+    "B4_ridge_hand": 5.37831811014966e-06,
+    "B5_rf_hand": 1.0,
+    "B6_histgb_hand": 1.0,
+    "B7_ridge_tfidf": 0.0029350556433200836,
+    "B8_histgb_tfidf": 0.16863754391670227,
+    "TABF_heuristic": 0.00904118549078703
+  },
+  "stratified": [
+    {
+      "task_type": "code_generation",
+      "n": 21,
+      "mae": 848.8,
+      "mape": 15.38,
+      "w20r": 66.67,
+      "avg_gt": 6683,
+      "avg_pred": 6852
+    },
+    {
+      "task_type": "bug_fix",
+      "n": 39,
+      "mae": 1147.6,
+      "mape": 10.09,
+      "w20r": 87.18,
+      "avg_gt": 11104,
+      "avg_pred": 10960
+    },
+    {
+      "task_type": "refactoring",
+      "n": 24,
+      "mae": 1935.5,
+      "mape": 12.5,
+      "w20r": 75.0,
+      "avg_gt": 13648,
+      "avg_pred": 13439
+    },
+    {
+      "task_type": "documentation",
+      "n": 25,
+      "mae": 919.0,
+      "mape": 13.35,
+      "w20r": 88.0,
+      "avg_gt": 6417,
+      "avg_pred": 6385
+    },
+    {
+      "task_type": "multi_step_plan",
+      "n": 8,
+      "mae": 3635.6,
+      "mape": 29.36,
+      "w20r": 50.0,
+      "avg_gt": 12740,
+      "avg_pred": 12197
+    },
+    {
+      "task_type": "data_analysis",
+      "n": 21,
+      "mae": 2159.2,
+      "mape": 14.01,
+      "w20r": 80.95,
+      "avg_gt": 15368,
+      "avg_pred": 15355
+    },
+    {
+      "task_type": "research_query",
+      "n": 21,
+      "mae": 2247.8,
+      "mape": 15.27,
+      "w20r": 66.67,
+      "avg_gt": 12631,
+      "avg_pred": 13011
+    },
+    {
+      "task_type": "tool_use_chain",
+      "n": 26,
+      "mae": 3636.4,
+      "mape": 28.54,
+      "w20r": 53.85,
+      "avg_gt": 14175,
+      "avg_pred": 15314
+    }
+  ],
+  "ablations": [
+    {
+      "config": "full_heuristic",
+      "mae": 2502.5,
+      "mape": 18.18,
+      "w20r": 65.41
+    },
+    {
+      "config": "no_complexity_scaling",
+      "mae": 4769.5,
+      "mape": 35.71,
+      "w20r": 30.81
+    },
+    {
+      "config": "no_multi_step",
+      "mae": 2917.6,
+      "mape": 20.39,
+      "w20r": 59.46
+    },
+    {
+      "config": "no_tool_keywords",
+      "mae": 2664.0,
+      "mape": 20.1,
+      "w20r": 60.54
+    },
+    {
+      "config": "no_code_keywords",
+      "mae": 3026.4,
+      "mape": 23.58,
+      "w20r": 55.14
+    },
+    {
+      "config": "no_file_refs",
+      "mae": 2666.6,
+      "mape": 19.26,
+      "w20r": 63.24
+    },
+    {
+      "config": "no_comparison",
+      "mae": 2760.4,
+      "mape": 19.8,
+      "w20r": 62.7
+    },
+    {
+      "config": "no_entity_count",
+      "mae": 3085.5,
+      "mape": 22.1,
+      "w20r": 57.3
+    },
+    {
+      "config": "no_word_adjustment",
+      "mae": 2595.5,
+      "mape": 18.81,
+      "w20r": 64.86
+    }
+  ],
+  "classifier": {
+    "task_type_acc": 95.14,
+    "complexity_acc": 86.49,
+    "both_acc": 83.24
+  }
+}

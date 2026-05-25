@@ -1,0 +1,8 @@
+metric,value
+turns_n,83.0
+status_success_pct,77.11
+eval_task_success_rate_mean,77.11
+median_latency_ms_complete,26503.0
+median_latency_ms_error,8593.0
+median_input_tokens_complete,22530.0
+median_input_tokens_error,20814.0
