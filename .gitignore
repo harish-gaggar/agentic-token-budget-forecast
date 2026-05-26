@@ -12,6 +12,10 @@ __pycache__/
 venv/
 env/
 
+# IEEE TAI submission build scratch (local portal uploads; not for public repo)
+submission/ieee-tai/.build/
+submission/ieee-tai/output/
+
 # LaTeX build scratch (paper.pdf may be checked in for convenience)
 *.aux
 paper.txt

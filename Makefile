@@ -8,12 +8,32 @@ TL_EXTRA = environ caption float nicefrac units pgf microtype xkeyval \
 # Docker image used by the `paper` target. Override with PAPER_IMAGE=...
 PAPER_IMAGE ?= texlive/texlive:latest-small
 
-.PHONY: all paper paper-local paper-txt experiments production microbench \
+.PHONY: all paper paper-local paper-txt ieee-blind-pdf ieee-tai-package experiments production microbench \
         generic-agents multiseed stagewise calibration stress prod-extract \
         tabf-replay reviewer-evidence verify view clean distclean venv
 
 # Public reproducibility path (figures + CSVs). Paper PDF is checked in.
 all: experiments production
+
+# IEEE TAI manuscript PDF (~4 pages). Output: paper_ieee.pdf
+# Portal bundle: anonymized LaTeX zip + Word + PDF preview.
+ieee-tai-package: ieee-blind-pdf
+	$(PY) submission/ieee-tai/build_submission.py
+
+ieee-blind-pdf: paper_ieee.pdf
+
+paper_ieee.pdf: paper_ieee.tex paper.bib \
+                      results/fig_w20r.pdf results/fig_calibration.pdf \
+                      results/fig_error_dist.pdf results/fig_per_type_w20r.pdf \
+                      results/fig_production_savings.pdf results/fig_generic_agents.pdf
+	docker run --rm --platform linux/amd64 -v "$(CURDIR)":/data -w /data \
+	  $(PAPER_IMAGE) bash -c '\
+	    tlmgr install ieeetran multirow microtype 2>/dev/null || true; \
+	    pdflatex -interaction=nonstopmode paper_ieee.tex >/dev/null && \
+	    bibtex paper_ieee >/dev/null && \
+	    pdflatex -interaction=nonstopmode paper_ieee.tex >/dev/null && \
+	    pdflatex -interaction=nonstopmode paper_ieee.tex'
+	@grep 'Output written on paper_ieee.pdf' paper_ieee.log | tail -1
 
 # Bundle the reviewer-requested experiments (Sections 6.5-6.8 and 7.5)
 # so they can be re-run with a single make target. Each underlying
